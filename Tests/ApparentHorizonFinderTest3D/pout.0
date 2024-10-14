@@ -1,0 +1,139 @@
+ApparentHorizonTest3D.inputs
+Parameter: max_spatial_derivative_order not found in parameter file. It has been set to its default value = 4.
+Parameter: num_ghosts not found in parameter file. It has been set to its default value = 3.
+Parameter: tag_buffer_size not found in parameter file. It has been set to its default value = 3.
+Parameter: grid_buffer_size not found in parameter file. It has been set to its default value = 8.
+Parameter: dt_multiplier not found in parameter file. It has been set to its default value = 0.25.
+Parameter: fill_ratio not found in parameter file. It has been set to its default value = 0.7.
+Parameter: extrapolation_order not found in parameter file. It has been set to its default value = 1.
+Parameter: num_extrapolating_vars not found in parameter file. It has been set to its default value = -1.
+You are using non periodic boundary conditions.
+The boundary params chosen are:  
+---------------------------------
+- Sommerfeld boundaries in direction high 0
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Reflective boundaries in direction low 0
+The variables that are parity odd in this direction are : 
+h12    h13    A12    A13    Gamma1    shift1    B1    
+
+- Sommerfeld boundaries in direction high 1
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction low 1
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction high 2
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction low 2
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+---------------------------------
+Parameter: center not found in parameter file. It has been set to its default value = 0 8 8.
+Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
+Using single regrid threshold.
+Parameter: regrid_threshold not found in parameter file. It has been set to its default value = 0.5.
+Parameter: checkpoint_interval not found in parameter file. It has been set to its default value = 1.
+Parameter: plot_interval not found in parameter file. It has been set to its default value = 0.
+Parameter: stop_time not found in parameter file. It has been set to its default value = 1.
+Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
+Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
+Parameter: num_plot_vars not found in parameter file. It has been set to its default value = -1.
+Parameter: print_progress_only_to_rank_0 not found in parameter file. It has been set to its default value = 0.
+Parameter: kerr_center not found in parameter file. It has been set to its default value = 0 8 8.
+Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 5.
+Parameter: AH_allow_re_attempt not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_max_fails_after_lost not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_stop_if_max_fails not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_print_geometry_data not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_re_solve_at_restart not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_num_extra_vars not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_stats_prefix not found in parameter file. It has been set to its default value = stats_AH.
+Parameter: AH_coords_prefix not found in parameter file. It has been set to its default value = coords_AH.
+Parameter: AH_merger_search_factor not found in parameter file. It has been set to its default value = 1.
+Parameter: AH_merger_pre_factor not found in parameter file. It has been set to its default value = 1.
+Parameter: AH_expansion_radius_power not found in parameter file. It has been set to its default value = 1.
+Parameter: max_spatial_derivative_order not found in parameter file. It has been set to its default value = 4.
+Parameter: num_ghosts not found in parameter file. It has been set to its default value = 3.
+Parameter: tag_buffer_size not found in parameter file. It has been set to its default value = 3.
+Parameter: grid_buffer_size not found in parameter file. It has been set to its default value = 8.
+Parameter: dt_multiplier not found in parameter file. It has been set to its default value = 0.25.
+Parameter: fill_ratio not found in parameter file. It has been set to its default value = 0.7.
+Parameter: extrapolation_order not found in parameter file. It has been set to its default value = 1.
+Parameter: num_extrapolating_vars not found in parameter file. It has been set to its default value = -1.
+You are using non periodic boundary conditions.
+The boundary params chosen are:  
+---------------------------------
+- Sommerfeld boundaries in direction high 0
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Reflective boundaries in direction low 0
+The variables that are parity odd in this direction are : 
+h12    h13    A12    A13    Gamma1    shift1    B1    
+
+- Sommerfeld boundaries in direction high 1
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction low 1
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction high 2
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction low 2
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+---------------------------------
+Parameter: center not found in parameter file. It has been set to its default value = 0 8 8.
+Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
+Using single regrid threshold.
+Parameter: regrid_threshold not found in parameter file. It has been set to its default value = 0.5.
+Parameter: checkpoint_interval not found in parameter file. It has been set to its default value = 1.
+Parameter: plot_interval not found in parameter file. It has been set to its default value = 0.
+Parameter: stop_time not found in parameter file. It has been set to its default value = 1.
+Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
+Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
+Parameter: num_plot_vars not found in parameter file. It has been set to its default value = -1.
+Parameter: print_progress_only_to_rank_0 not found in parameter file. It has been set to its default value = 0.
+Setting Original Guess to f=5
+-------------------------------------
+PETScAHSolver Options:
+-------------------------------------
+PETSc SNES Options:
+Type: newtonls
+atol = 1e-50, rtol = 1e-08, stol = 1e-08,
+maxit = 50, maxf = 10000
+divtol = 10000
+-------------------------------------
+PETSc KSP Options:
+Type: gmres
+rtol = 1e-05, abstol = 1e-50, dtol = 10000, maxits = 10000
+-------------------------------------
+Setting origin to (0,8,8)
+SNES Iteration number 13
+KSP Iteration number 116
+In [ApparentHorizon::solve::post-solving]
+Solver converged. Horizon FOUND.
+SNESConvergedReason = 4
+mass = 9.99995
+spin = 4.99979
+irreducible mass = 9.65924
+dimensionless spin vector = (0.499982, 1.29519e-15, -1.77775e-16)
+dimensionless spin in z (from equator-length integral) = 0
+linear momentum norm |P| = 9.98998e-08
+linear momentum P = (1.13398e-11, -3.66143e-09, -9.98327e-08)
+Printing statistics and coordinates.
+ApparentHorizon::solve finished successfully!
+error = 0.00872037%
+ApparentHorizon3D test passed.

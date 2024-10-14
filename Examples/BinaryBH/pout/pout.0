@@ -1,0 +1,3693 @@
+Parameter: num_ghosts not found in parameter file. It has been set to its default value = 3.
+Parameter: tag_buffer_size not found in parameter file. It has been set to its default value = 3.
+Parameter: grid_buffer_size not found in parameter file. It has been set to its default value = 8.
+Parameter: fill_ratio not found in parameter file. It has been set to its default value = 0.7.
+Parameter: extrapolation_order not found in parameter file. It has been set to its default value = 1.
+Parameter: num_extrapolating_vars not found in parameter file. It has been set to its default value = -1.
+You are using non periodic boundary conditions.
+The boundary params chosen are:  
+---------------------------------
+- Sommerfeld boundaries in direction high 0
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction low 0
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction high 1
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction low 1
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction high 2
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Reflective boundaries in direction low 2
+The variables that are parity odd in this direction are : 
+h13    h23    A13    A23    Gamma3    shift3    B3    Mom3    Weyl4_Im    
+
+---------------------------------
+Parameter: center not found in parameter file. It has been set to its default value = 8 8 0.
+Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
+Using single regrid threshold.
+Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
+Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
+Parameter: min_chi not found in parameter file. It has been set to its default value = 0.0001.
+Parameter: min_lapse not found in parameter file. It has been set to its default value = 0.0001.
+Parameter: extraction_center not found in parameter file. It has been set to its default value = 8 8 0.
+Parameter: write_extraction not found in parameter file. It has been set to its default value = 0.
+Parameter: extraction_file_prefix not found in parameter file. It has been set to its default value = Weyl4_extraction_.
+Parameter: integral_file_prefix not found in parameter file. It has been set to its default value = Weyl4_mode_.
+Parameter: AH_track_center not found in parameter file. It has been set to its default value = 1.
+Parameter: AH_predict_origin not found in parameter file. It has been set to its default value = 1.
+Parameter: AH_level_to_run not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_start_time not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_give_up_time not found in parameter file. It has been set to its default value = -1.
+Parameter: AH_allow_re_attempt not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_max_fails_after_lost not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_stop_if_max_fails not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_verbose not found in parameter file. It has been set to its default value = 1.
+Parameter: AH_print_geometry_data not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_re_solve_at_restart not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_num_extra_vars not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_stats_prefix not found in parameter file. It has been set to its default value = stats_AH.
+Parameter: AH_coords_prefix not found in parameter file. It has been set to its default value = coords_AH.
+Parameter: AH_merger_search_factor not found in parameter file. It has been set to its default value = 1.
+Parameter: AH_merger_pre_factor not found in parameter file. It has been set to its default value = 1.
+Parameter: AH_expansion_radius_power not found in parameter file. It has been set to its default value = 1.
+Parameter: centerA not found in parameter file. It has been set to its default value = 8 8 0.
+Parameter: centerB not found in parameter file. It has been set to its default value = 8 8 0.
+Parameter: calculate_constraint_norms not found in parameter file. It has been set to its default value = 0.
+Parameter: AH_1_initial_guess not found in parameter file. It has been set to its default value = 0.25.
+Parameter: AH_2_initial_guess not found in parameter file. It has been set to its default value = 0.25.
+Parameter: AH_set_origins_to_punctures not found in parameter file. It has been set to its default value = 0.
+Parameter: num_ghosts not found in parameter file. It has been set to its default value = 3.
+Parameter: tag_buffer_size not found in parameter file. It has been set to its default value = 3.
+Parameter: grid_buffer_size not found in parameter file. It has been set to its default value = 8.
+Parameter: fill_ratio not found in parameter file. It has been set to its default value = 0.7.
+Parameter: extrapolation_order not found in parameter file. It has been set to its default value = 1.
+You are using non periodic boundary conditions.
+The boundary params chosen are:  
+---------------------------------
+- Sommerfeld boundaries in direction high 0
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction low 0
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction high 1
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction low 1
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Sommerfeld boundaries in direction high 2
+The non zero asymptotic values of the variables in this direction are : 
+chi = 1    h11 = 1    h22 = 1    h33 = 1    lapse = 1    
+
+- Reflective boundaries in direction low 2
+The variables that are parity odd in this direction are : 
+h13    h23    A13    A23    Gamma3    shift3    B3    Mom3    Weyl4_Im    
+
+---------------------------------
+Parameter: center not found in parameter file. It has been set to its default value = 8 8 0.
+Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
+Using single regrid threshold.
+Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
+Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
+GRAMRLevel constructor
+GRAMRLevel::define 0
+GRAMRLevel constructor
+GRAMRLevel::define 1
+GRAMRLevel constructor
+GRAMRLevel::define 2
+GRAMRLevel::initialGrid 0
+GRAMRLevel::::loadBalance
+BinaryBHLevel::initialData 0
+GRAMRLevel::tagCells 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::initialGrid 0
+GRAMRLevel::::loadBalance
+GRAMRLevel::initialGrid 1
+GRAMRLevel::::loadBalance
+BinaryBHLevel::initialData 0
+BinaryBHLevel::initialData 1
+GRAMRLevel::tagCells 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::initialGrid 0
+GRAMRLevel::::loadBalance
+GRAMRLevel::initialGrid 1
+GRAMRLevel::::loadBalance
+GRAMRLevel::initialGrid 2
+GRAMRLevel::::loadBalance
+BinaryBHLevel::initialData 0
+BinaryBHLevel::initialData 1
+BinaryBHLevel::initialData 2
+GRAMRLevel::computeInitialDt 0
+GRAMRLevel::computeInitialDt 1
+GRAMRLevel::computeInitialDt 2
+Setting Original Guess to f=0.25
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+Solver converged. Horizon FOUND.
+mass = 0.532665
+spin = 0.000147356
+Setting Original Guess to f=0.25
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+Solver converged. Horizon FOUND.
+mass = 0.532665
+spin = 0.000147356
+BHs #0 and #1 at distance = 4.00163 > minimum distance = 2. Skipping solve for merger...
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 2 components
+    Summary: 2 datasets at 888 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::writeCheckpointHeader
+num_components :25
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.125
+dx :0.5
+time :0
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0625
+dx :0.25
+time :0
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.03125
+dx :0.125
+time :0
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::writePlotHeader
+num_components :4
+component_0 :chi
+component_1 :Ham
+component_2 :Weyl4_Re
+component_3 :Weyl4_Im
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.125
+dx :0.5
+time :0
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.0625
+dx :0.25
+time :0
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.03125
+dx :0.125
+time :0
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::advance level 0 at time 0 (0 M/hr). Boxes on this rank: 1 / 1
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+GRAMRLevel::advance level 1 at time 0 (0 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0 (0 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.03125 (35.5405 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 1 at time 0.0625 (53.964 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.0625 (48.2437 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.09375 (64.1604 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 2 components
+    Summary: 2 datasets at 888 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 0 finished
+coarse time step   0  old time = 0.000000e+00  old dt = 1.250000e-01  wallclocktime = 4.88e+00
+GRAMRLevel::writeCheckpointHeader
+num_components :25
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.125
+dx :0.5
+time :0.125
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0625
+dx :0.25
+time :0.125
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.03125
+dx :0.125
+time :0.125
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::writePlotHeader
+num_components :4
+component_0 :chi
+component_1 :Ham
+component_2 :Weyl4_Re
+component_3 :Weyl4_Im
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.125
+dx :0.5
+time :0.125
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.0625
+dx :0.25
+time :0.125
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.03125
+dx :0.125
+time :0.125
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::tagCells 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 1
+GRAMRLevel::::loadBalance
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 0 at time 0.125 (61.5945 M/hr). Boxes on this rank: 1 / 1
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+GRAMRLevel::advance level 1 at time 0.125 (58.9967 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.125 (55.4175 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.15625 (64.5316 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 1 at time 0.1875 (69.445 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.1875 (66.0796 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.21875 (72.8283 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 2 components
+    Summary: 2 datasets at 888 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+Solving AH #0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+Solver converged. Horizon FOUND.
+mass = 0.531527
+spin = 0.000169988
+Solving AH #1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+Solver converged. Horizon FOUND.
+mass = 0.531527
+spin = 0.000169988
+BHs #0 and #1 at distance = 4.00198 > minimum distance = 2. Skipping solve for merger...
+GRAMRLevel::postTimeStep 0 finished
+coarse time step   1  old time = 1.250000e-01  old dt = 1.250000e-01  wallclocktime = 6.26e+00
+GRAMRLevel::writeCheckpointHeader
+num_components :25
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.125
+dx :0.5
+time :0.25
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0625
+dx :0.25
+time :0.25
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.03125
+dx :0.125
+time :0.25
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::writePlotHeader
+num_components :4
+component_0 :chi
+component_1 :Ham
+component_2 :Weyl4_Re
+component_3 :Weyl4_Im
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.125
+dx :0.5
+time :0.25
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.0625
+dx :0.25
+time :0.25
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.03125
+dx :0.125
+time :0.25
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::tagCells 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 1
+GRAMRLevel::::loadBalance
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 0 at time 0.25 (66.3392 M/hr). Boxes on this rank: 1 / 1
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+GRAMRLevel::advance level 1 at time 0.25 (64.7974 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.25 (62.5748 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.28125 (67.5933 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 1 at time 0.3125 (70.3795 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.3125 (68.2508 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.34375 (72.4461 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 2 components
+    Summary: 2 datasets at 888 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 0 finished
+coarse time step   2  old time = 2.500000e-01  old dt = 1.250000e-01  wallclocktime = 5.56e+00
+GRAMRLevel::writeCheckpointHeader
+num_components :25
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.125
+dx :0.5
+time :0.375
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0625
+dx :0.25
+time :0.375
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.03125
+dx :0.125
+time :0.375
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::writePlotHeader
+num_components :4
+component_0 :chi
+component_1 :Ham
+component_2 :Weyl4_Re
+component_3 :Weyl4_Im
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.125
+dx :0.5
+time :0.375
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.0625
+dx :0.25
+time :0.375
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.03125
+dx :0.125
+time :0.375
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::tagCells 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 1
+GRAMRLevel::::loadBalance
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 0 at time 0.375 (70.5747 M/hr). Boxes on this rank: 1 / 1
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+GRAMRLevel::advance level 1 at time 0.375 (69.4079 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.375 (67.6897 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.40625 (71.2042 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 1 at time 0.4375 (73.1101 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.4375 (71.4666 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.46875 (74.5513 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 2 components
+    Summary: 2 datasets at 888 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+Solving AH #0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+Solver converged. Horizon FOUND.
+mass = 0.530759
+spin = 0.000204079
+Solving AH #1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 14 components
+    This rank is querying for interpolated D(1,0,0) data for 7 components
+    This rank is querying for interpolated D(0,1,0) data for 7 components
+    This rank is querying for interpolated D(0,0,1) data for 7 components
+    Summary: 35 datasets at 60 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+Solver converged. Horizon FOUND.
+mass = 0.530759
+spin = 0.000204079
+BHs #0 and #1 at distance = 4.00227 > minimum distance = 2. Skipping solve for merger...
+GRAMRLevel::postTimeStep 0 finished
+coarse time step   3  old time = 3.750000e-01  old dt = 1.250000e-01  wallclocktime = 6.22e+00
+GRAMRLevel::writeCheckpointHeader
+num_components :25
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.125
+dx :0.5
+time :0.5
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0625
+dx :0.25
+time :0.5
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.03125
+dx :0.125
+time :0.5
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::writePlotHeader
+num_components :4
+component_0 :chi
+component_1 :Ham
+component_2 :Weyl4_Re
+component_3 :Weyl4_Im
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.125
+dx :0.5
+time :0.5
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.0625
+dx :0.25
+time :0.5
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.03125
+dx :0.125
+time :0.5
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::tagCells 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 1
+GRAMRLevel::::loadBalance
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 0 at time 0.5 (70.9913 M/hr). Boxes on this rank: 1 / 1
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+GRAMRLevel::advance level 1 at time 0.5 (70.1015 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.5 (68.7849 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.53125 (71.4593 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 1 at time 0.5625 (72.9282 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.5625 (71.6372 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.59375 (74.055 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+GRAMRLevel::fillAllDiagnosticsGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 2 components
+    Summary: 2 datasets at 888 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 0 finished
+coarse time step   4  old time = 5.000000e-01  old dt = 1.250000e-01  wallclocktime = 5.56e+00
+GRAMRLevel::writeCheckpointHeader
+num_components :25
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.125
+dx :0.5
+time :0.625
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0625
+dx :0.25
+time :0.625
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.03125
+dx :0.125
+time :0.625
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::writePlotHeader
+num_components :4
+component_0 :chi
+component_1 :Ham
+component_2 :Weyl4_Re
+component_3 :Weyl4_Im
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.125
+dx :0.5
+time :0.625
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (31,31,15) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.0625
+dx :0.25
+time :0.625
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (63,63,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::writePlotLevel
+dt :0.03125
+dx :0.125
+time :0.625
+is_periodic_0 :0
+is_periodic_1 :0
+is_periodic_2 :0
+ref_ratio :2
+tag_buffer_size :3
+prob_domain :((0,0,0) (127,127,63) (0,0,0))
+
+GRAMRLevel::tagCells 0
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 1
+GRAMRLevel::::loadBalance
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
+GRAMRLevel::advance level 0 at time 0.625 (72.7842 M/hr). Boxes on this rank: 1 / 1
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+GRAMRLevel::advance level 1 at time 0.625 (72.0333 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::advance level 2 at time 0.625 (70.9149 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::advance level 2 at time 0.65625 (73.0827 M/hr). Boxes on this rank: 1 / 2
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 2
+GRAMRLevel::postTimeStep 2
+GRAMRLevel::postTimeStep 2 finished
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::fillAllEvolutionGhosts
+[32;1m[AMRInterpolator][0m [32;1mInterpolating data[0m
+    This rank is querying for interpolated D(0,0,0) data for 3 components
+    Summary: 3 datasets at 2 points
+[32;1m[AMRInterpolator][0m Entering computeLevelLayouts
+[32;1m[AMRInterpolator][0m Leaving computeLevelLayouts
+[32;1m[AMRInterpolator][0m Entering findBoxes
+    All points have been found
+[32;1m[AMRInterpolator][0m Leaving findBoxes
+[32;1m[AMRInterpolator][0m Entering prepareMPI
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering exchangeMPIQuery
+[32;1m[AMRInterpolator][0m Entering calculateAnswer
+[32;1m[AMRInterpolator][0m Entering exchangeMPIAnswer
+[32;1m[AMRInterpolator][0m Leaving exchangeMPIAnswer
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::tagCells 1
+GRAMRLevel::fillAllEvolutionGhosts
+GRAMRLevel::regrid 2
+GRAMRLevel::::loadBalance
