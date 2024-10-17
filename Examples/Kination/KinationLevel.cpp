@@ -4,7 +4,7 @@
  */
 
 // General includes common to most GR problems
-#include "ScalarFieldLevel.hpp"
+#include "KinationLevel.hpp"
 #include "BoxLoops.hpp"
 #include "NanCheck.hpp"
 #include "PositiveChiAndAlpha.hpp"
@@ -30,7 +30,7 @@
 #include "SetValue.hpp"
 
 // Things to do at each advance step, after the RK4 is calculated
-void ScalarFieldLevel::specificAdvance()
+void KinationLevel::specificAdvance()
 {
     // Enforce trace free A_ij and positive chi and alpha
     BoxLoops::loop(
@@ -46,11 +46,11 @@ void ScalarFieldLevel::specificAdvance()
 }
 
 // Initial data for field and metric variables
-void ScalarFieldLevel::initialData()
+void KinationLevel::initialData()
 {
-    CH_TIME("ScalarFieldLevel::initialData");
+    CH_TIME("KinationLevel::initialData");
     if (m_verbosity)
-        pout() << "ScalarFieldLevel::initialData " << m_level << endl;
+        pout() << "KinationLevel::initialData " << m_level << endl;
 
     // First set everything to zero then initial conditions for scalar field -
     // here a Kerr BH and a scalar field profile
@@ -66,7 +66,7 @@ void ScalarFieldLevel::initialData()
 
 #ifdef CH_USE_HDF5
 // Things to do before outputting a checkpoint file
-void ScalarFieldLevel::prePlotLevel()
+void KinationLevel::prePlotLevel()
 {
     fillAllGhosts();
     Potential potential(m_p.potential_params);
@@ -79,7 +79,7 @@ void ScalarFieldLevel::prePlotLevel()
 #endif
 
 // Things to do in RHS update, at each RK4 step
-void ScalarFieldLevel::specificEvalRHS(GRLevelData &a_soln, GRLevelData &a_rhs,
+void KinationLevel::specificEvalRHS(GRLevelData &a_soln, GRLevelData &a_rhs,
                                        const double a_time)
 {
     // Enforce trace free A_ij and positive chi and alpha
@@ -110,20 +110,20 @@ void ScalarFieldLevel::specificEvalRHS(GRLevelData &a_soln, GRLevelData &a_rhs,
 }
 
 // Things to do at ODE update, after soln + rhs
-void ScalarFieldLevel::specificUpdateODE(GRLevelData &a_soln,
+void KinationLevel::specificUpdateODE(GRLevelData &a_soln,
                                          const GRLevelData &a_rhs, Real a_dt)
 {
     // Enforce trace free A_ij
     BoxLoops::loop(TraceARemoval(), a_soln, a_soln, INCLUDE_GHOST_CELLS);
 }
 
-void ScalarFieldLevel::preTagCells()
+void KinationLevel::preTagCells()
 {
     // we don't need any ghosts filled for the fixed grids tagging criterion
     // used here so don't fill any
 }
 
-void ScalarFieldLevel::computeTaggingCriterion(
+void KinationLevel::computeTaggingCriterion(
     FArrayBox &tagging_criterion, const FArrayBox &current_state,
     const FArrayBox &current_state_diagnostics)
 {
@@ -131,7 +131,7 @@ void ScalarFieldLevel::computeTaggingCriterion(
         FixedGridsTaggingCriterion(m_dx, m_level, 2.0 * m_p.L, m_p.center),
         current_state, tagging_criterion);
 }
-void ScalarFieldLevel::specificPostTimeStep()
+void KinationLevel::specificPostTimeStep()
 {
 #ifdef USE_AHFINDER
     if (m_p.AH_activate && m_level == m_p.AH_params.level_to_run)

@@ -17,7 +17,7 @@
 #include "SimulationParameters.hpp"
 
 // Problem specific includes:
-#include "ScalarFieldLevel.hpp"
+#include "KinationLevel.hpp"
 
 // Chombo namespace
 #include "UsingNamespace.H"
@@ -37,9 +37,9 @@ int runGRChombo(int argc, char *argv[])
     // (To simulate a different problem, define a new child of AMRLevel
     // and an associated LevelFactory)
     BHAMR bh_amr;
-    DefaultLevelFactory<ScalarFieldLevel> scalar_field_level_fact(bh_amr,
+    DefaultLevelFactory<KinationLevel> kination_level_fact(bh_amr,
                                                                   sim_params);
-    setupAMRObject(bh_amr, scalar_field_level_fact);
+    setupAMRObject(bh_amr, kination_level_fact);
 
     // call this after amr object setup so grids known
     // and need it to stay in scope throughout run

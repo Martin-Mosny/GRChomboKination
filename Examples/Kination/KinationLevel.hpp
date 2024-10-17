@@ -3,8 +3,8 @@
  * Please refer to LICENSE in GRChombo's root directory.
  */
 
-#ifndef SCALARFIELDLEVEL_HPP_
-#define SCALARFIELDLEVEL_HPP_
+#ifndef KINATIONLEVEL_HPP_
+#define KINATIONLEVEL_HPP_
 
 #include "BHAMR.hpp"
 #include "DefaultLevelFactory.hpp"
@@ -22,9 +22,9 @@
    time symmetry assuming conformal flatness). \sa MatterCCZ4(),
    ConstraintsMatter(), ScalarField(), RelaxationChi()
 */
-class ScalarFieldLevel : public GRAMRLevel
+class KinationLevel : public GRAMRLevel
 {
-    friend class DefaultLevelFactory<ScalarFieldLevel>;
+    friend class DefaultLevelFactory<KinationLevel>;
     // Inherit the contructors from GRAMRLevel
     using GRAMRLevel::GRAMRLevel;
 
@@ -65,4 +65,4 @@ class ScalarFieldLevel : public GRAMRLevel
     virtual void specificPostTimeStep() override;
 };
 
-#endif /* SCALARFIELDLEVEL_HPP_ */
+#endif /* KINATIONLEVEL_HPP_ */

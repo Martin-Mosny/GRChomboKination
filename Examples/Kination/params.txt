@@ -8,9 +8,9 @@ verbosity = 0
 
 # location / naming of output files
 # output_path = "" # Main path for all files. Must exist!
-chk_prefix = ScalarField_
-plot_prefix = ScalarFieldp_
-# restart_file = ScalarField_000000.3d.hdf5
+chk_prefix = Kination_
+plot_prefix = Kinationp_
+# restart_file = Kination_000000.3d.hdf5
 
 # HDF5files are written every dt = L/N*dt_multiplier*checkpoint_interval
 checkpoint_interval = 500
