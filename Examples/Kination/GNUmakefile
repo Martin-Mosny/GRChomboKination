@@ -8,7 +8,7 @@
 
 GRCHOMBO_SOURCE = ../../Source
 
-ebase := Main_ScalarField
+ebase := Main_Kination
 
 LibNames := AMRTimeDependent AMRTools BoxTools
 

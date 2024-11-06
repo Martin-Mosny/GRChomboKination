@@ -206,8 +206,11 @@ void setupAMRObject(GRAMR &gr_amr, AMRLevelFactory &a_factory)
 #ifdef CH_USE_HDF5
         HDF5Handle handle(chombo_params.restart_file, HDF5Handle::OPEN_RDONLY);
         // read from checkpoint file
+        pout() << "Point 3" << endl;
         gr_amr.setupForRestart(handle);
+        pout() << "Point 4" << endl;
         handle.close();
+        pout() << "SUCCESS" << endl;
 #else
         MayDay::Error("GRChombo restart only defined with hdf5");
 #endif

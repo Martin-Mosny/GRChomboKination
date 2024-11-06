@@ -36,17 +36,21 @@ int runGRChombo(int argc, char *argv[])
     // The line below selects the problem that is simulated
     // (To simulate a different problem, define a new child of AMRLevel
     // and an associated LevelFactory)
+    pout() << "Setup DefaultLevelFactory" << std::endl;
     BHAMR bh_amr;
     DefaultLevelFactory<KinationLevel> kination_level_fact(bh_amr,
                                                                   sim_params);
+    pout() << "setupAMRObject" << std::endl;
     setupAMRObject(bh_amr, kination_level_fact);
 
     // call this after amr object setup so grids known
     // and need it to stay in scope throughout run
+    pout() << "interpolator start" << std::endl;
     AMRInterpolator<Lagrange<4>> interpolator(
         bh_amr, sim_params.origin, sim_params.dx, sim_params.boundary_params,
         sim_params.verbosity);
     bh_amr.set_interpolator(&interpolator);
+    pout() << "interpolator done" << std::endl;
 
 #ifdef USE_AHFINDER
     if (sim_params.AH_activate)

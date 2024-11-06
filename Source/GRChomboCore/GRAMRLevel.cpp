@@ -714,13 +714,17 @@ void GRAMRLevel::readCheckpointLevel(HDF5Handle &a_handle)
                 m_ref_ratio, m_num_ghosts);
         }
     }
-
+    
     // reshape state with new grids
     m_state_new.define(level_domain, NUM_VARS, iv_ghosts);
+    pout() << "Number 1" << endl;
     bool redefine_data = false;
+    pout() << "Number 2" << endl;
     Interval comps(0, NUM_VARS - 1);
+    pout() << "data_status is the problem" << endl;
     const int data_status = read<FArrayBox>(a_handle, m_state_new, "data",
                                             level_domain, comps, redefine_data);
+    pout() << "Reshape attempt" << endl;
     if (data_status != 0)
     {
         MayDay::Error("GRAMRLevel::readCheckpointLevel: file does not contain "
@@ -732,6 +736,7 @@ void GRAMRLevel::readCheckpointLevel(HDF5Handle &a_handle)
         m_state_diagnostics.define(level_domain, NUM_DIAGNOSTIC_VARS,
                                    iv_ghosts);
     }
+    pout() << "WHOLE FUNCTION SUCCESS" << endl;
 }
 
 void GRAMRLevel::writePlotLevel(HDF5Handle &a_handle) const
