@@ -1,0 +1,11 @@
+ number_procs = 2
+ threads = 2
+ mpi provided thread support = serialized
+ simd width (doubles) = 4
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 0 on node tplxlap229 exited on signal 9 (Killed).
+--------------------------------------------------------------------------

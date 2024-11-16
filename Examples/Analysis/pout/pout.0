@@ -1,0 +1,17 @@
+Parameter: num_ghosts not found in parameter file. It has been set to its default value = 3.
+Parameter: grid_buffer_size not found in parameter file. It has been set to its default value = 8.
+Parameter: fill_ratio not found in parameter file. It has been set to its default value = 0.7.
+Parameter: center not found in parameter file. It has been set to its default value = 50 50 50.
+Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
+Using single regrid threshold.
+Parameter: regrid_threshold not found in parameter file. It has been set to its default value = 0.5.
+Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
+Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
+Parameter: min_chi not found in parameter file. It has been set to its default value = 0.0001.
+Parameter: min_lapse not found in parameter file. It has been set to its default value = 0.0001.
+Parameter: activate_extraction not found in parameter file. It has been set to its default value = 0.
+Parameter: kerr_center not found in parameter file. It has been set to its default value = 50 50 50.
+Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.08.
+Hello
+27
+GRChombo finished.
