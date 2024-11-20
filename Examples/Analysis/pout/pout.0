@@ -12,6 +12,172 @@ Parameter: min_lapse not found in parameter file. It has been set to its default
 Parameter: activate_extraction not found in parameter file. It has been set to its default value = 0.
 Parameter: kerr_center not found in parameter file. It has been set to its default value = 50 50 50.
 Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.08.
-Hello
-27
+Problem domain low vector is: (0,0,0)
+Problem domain high vector is: (31,31,31)
+0 0 0
+0 0 16
+0 16 0
+0 16 16
+16 0 0
+16 0 16
+16 16 0
+16 16 16
+15 15 15
+15 15 31
+15 31 15
+15 31 31
+31 15 15
+31 15 31
+31 31 15
+31 31 31
+Boxes 0 and 0 intersect: 1
+Boxes 0 and 1 intersect: 0
+Boxes 0 and 2 intersect: 0
+Boxes 0 and 3 intersect: 0
+Boxes 0 and 4 intersect: 0
+Boxes 0 and 5 intersect: 0
+Boxes 0 and 6 intersect: 0
+Boxes 0 and 7 intersect: 0
+Boxes 1 and 0 intersect: 0
+Boxes 1 and 1 intersect: 1
+Boxes 1 and 2 intersect: 0
+Boxes 1 and 3 intersect: 0
+Boxes 1 and 4 intersect: 0
+Boxes 1 and 5 intersect: 0
+Boxes 1 and 6 intersect: 0
+Boxes 1 and 7 intersect: 0
+Boxes 2 and 0 intersect: 0
+Boxes 2 and 1 intersect: 0
+Boxes 2 and 2 intersect: 1
+Boxes 2 and 3 intersect: 0
+Boxes 2 and 4 intersect: 0
+Boxes 2 and 5 intersect: 0
+Boxes 2 and 6 intersect: 0
+Boxes 2 and 7 intersect: 0
+Boxes 3 and 0 intersect: 0
+Boxes 3 and 1 intersect: 0
+Boxes 3 and 2 intersect: 0
+Boxes 3 and 3 intersect: 1
+Boxes 3 and 4 intersect: 0
+Boxes 3 and 5 intersect: 0
+Boxes 3 and 6 intersect: 0
+Boxes 3 and 7 intersect: 0
+Boxes 4 and 0 intersect: 0
+Boxes 4 and 1 intersect: 0
+Boxes 4 and 2 intersect: 0
+Boxes 4 and 3 intersect: 0
+Boxes 4 and 4 intersect: 1
+Boxes 4 and 5 intersect: 0
+Boxes 4 and 6 intersect: 0
+Boxes 4 and 7 intersect: 0
+Boxes 5 and 0 intersect: 0
+Boxes 5 and 1 intersect: 0
+Boxes 5 and 2 intersect: 0
+Boxes 5 and 3 intersect: 0
+Boxes 5 and 4 intersect: 0
+Boxes 5 and 5 intersect: 1
+Boxes 5 and 6 intersect: 0
+Boxes 5 and 7 intersect: 0
+Boxes 6 and 0 intersect: 0
+Boxes 6 and 1 intersect: 0
+Boxes 6 and 2 intersect: 0
+Boxes 6 and 3 intersect: 0
+Boxes 6 and 4 intersect: 0
+Boxes 6 and 5 intersect: 0
+Boxes 6 and 6 intersect: 1
+Boxes 6 and 7 intersect: 0
+Boxes 7 and 0 intersect: 0
+Boxes 7 and 1 intersect: 0
+Boxes 7 and 2 intersect: 0
+Boxes 7 and 3 intersect: 0
+Boxes 7 and 4 intersect: 0
+Boxes 7 and 5 intersect: 0
+Boxes 7 and 6 intersect: 0
+Boxes 7 and 7 intersect: 1
+HELLO
+DID THIS WORK
+Problem domain low vector is: (0,0,0)
+Problem domain high vector is: (63,63,63)
+0 0 0
+0 0 16
+0 16 0
+0 16 16
+16 0 0
+16 0 16
+16 16 0
+16 16 16
+15 15 15
+15 15 31
+15 31 15
+15 31 31
+31 15 15
+31 15 31
+31 31 15
+31 31 31
+Boxes 0 and 0 intersect: 1
+Boxes 0 and 1 intersect: 0
+Boxes 0 and 2 intersect: 0
+Boxes 0 and 3 intersect: 0
+Boxes 0 and 4 intersect: 0
+Boxes 0 and 5 intersect: 0
+Boxes 0 and 6 intersect: 0
+Boxes 0 and 7 intersect: 0
+Boxes 1 and 0 intersect: 0
+Boxes 1 and 1 intersect: 1
+Boxes 1 and 2 intersect: 0
+Boxes 1 and 3 intersect: 0
+Boxes 1 and 4 intersect: 0
+Boxes 1 and 5 intersect: 0
+Boxes 1 and 6 intersect: 0
+Boxes 1 and 7 intersect: 0
+Boxes 2 and 0 intersect: 0
+Boxes 2 and 1 intersect: 0
+Boxes 2 and 2 intersect: 1
+Boxes 2 and 3 intersect: 0
+Boxes 2 and 4 intersect: 0
+Boxes 2 and 5 intersect: 0
+Boxes 2 and 6 intersect: 0
+Boxes 2 and 7 intersect: 0
+Boxes 3 and 0 intersect: 0
+Boxes 3 and 1 intersect: 0
+Boxes 3 and 2 intersect: 0
+Boxes 3 and 3 intersect: 1
+Boxes 3 and 4 intersect: 0
+Boxes 3 and 5 intersect: 0
+Boxes 3 and 6 intersect: 0
+Boxes 3 and 7 intersect: 0
+Boxes 4 and 0 intersect: 0
+Boxes 4 and 1 intersect: 0
+Boxes 4 and 2 intersect: 0
+Boxes 4 and 3 intersect: 0
+Boxes 4 and 4 intersect: 1
+Boxes 4 and 5 intersect: 0
+Boxes 4 and 6 intersect: 0
+Boxes 4 and 7 intersect: 0
+Boxes 5 and 0 intersect: 0
+Boxes 5 and 1 intersect: 0
+Boxes 5 and 2 intersect: 0
+Boxes 5 and 3 intersect: 0
+Boxes 5 and 4 intersect: 0
+Boxes 5 and 5 intersect: 1
+Boxes 5 and 6 intersect: 0
+Boxes 5 and 7 intersect: 0
+Boxes 6 and 0 intersect: 0
+Boxes 6 and 1 intersect: 0
+Boxes 6 and 2 intersect: 0
+Boxes 6 and 3 intersect: 0
+Boxes 6 and 4 intersect: 0
+Boxes 6 and 5 intersect: 0
+Boxes 6 and 6 intersect: 1
+Boxes 6 and 7 intersect: 0
+Boxes 7 and 0 intersect: 0
+Boxes 7 and 1 intersect: 0
+Boxes 7 and 2 intersect: 0
+Boxes 7 and 3 intersect: 0
+Boxes 7 and 4 intersect: 0
+Boxes 7 and 5 intersect: 0
+Boxes 7 and 6 intersect: 0
+Boxes 7 and 7 intersect: 1
+HELLO
+DID THIS WORK
 GRChombo finished.

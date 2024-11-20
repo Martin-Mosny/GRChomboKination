@@ -35,31 +35,21 @@ int runGRChomboAnalysis(int argc, char *argv[])
         return 0;
 
     // Here we now run various analysis on the results of the simulation
-    // First we loop over all points
+    // Initialize necessary objects
     const std::string filename = "/home/mosny/Desktop/scratch/Kination_000002.3d.hdf5";
-    
-    ProblemDomain probDomain;
-    read_ProblemDomain(filename, probDomain);
+    sim_parameters params;
+    read_HDF5_key_attributes(filename, params);
 
-    
-    HDF5Handle a_handle(filename, HDF5Handle::OPEN_RDONLY);
-    
-    Vector<Box> boxes;
-    std::string a_var1 = "/level_0/boxes";
-    std::string &a_name1 = a_var1;
-    read(a_handle, boxes, a_name1);
-    pout() << "Hello" << endl;
-    Vector<int> procAssign(boxes.size());
-    LoadBalance(procAssign, boxes);
-    DisjointBoxLayout a_layout(boxes, procAssign, probDomain);
-    LevelData<FArrayBox> a_data;
-    std::string a_variable = "/level_0/data";
-    std::string &a_name = a_variable;
-    read(a_handle, a_data, a_name, a_layout);
+    // Initialize necessary objects and assign memory for pointer objects
+    Vector<ProblemDomain> probDomain(params.num_levels);
+    Vector<LevelData<FArrayBox> *> data(params.num_levels, NULL);
+    for (int i = 0; i < 2; i++)
+    {
+        data[i] = new LevelData<FArrayBox>();
+    }
 
-    a_handle.close();
-
-    pout() << a_data.nComp() << endl;
+    // Read HDF5 Data
+    read_HDF5_Data(filename, probDomain, data, params);
 
     return 0;
 }
