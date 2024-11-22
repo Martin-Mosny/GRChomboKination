@@ -4,6 +4,7 @@
 #include <iostream>
 #include "LoadBalance.H"
 #include "GRAMRLevel.hpp"
+#include "computeSum.H"
 
 struct ProbDomVector
 {
@@ -42,10 +43,13 @@ void read_HDF5_key_attributes(const std::string &filename, sim_parameters &a_par
     type = attribute.getDataType();
     attribute.read(type, &a_params.num_components);
 
-    // Read the dx and ref_ratios
-    
+    // Resize the dx and ref_ratio vectors
     Real dx_val;
     int ref_ratio_val;
+    a_params.dx.resize(a_params.num_levels, 0);
+    a_params.ref_ratio.resize(a_params.num_levels, 0);
+
+    // Read the dx and ref_ratios
     for (int i = 0; i < a_params.num_levels; i++)
     {
         std::string groupName = "/level_" + std::to_string(i);
@@ -55,14 +59,13 @@ void read_HDF5_key_attributes(const std::string &filename, sim_parameters &a_par
         attribute = group.openAttribute("dx");
         type = attribute.getDataType();
         attribute.read(type, &dx_val);
-        
-        a_params.dx.append(dx_val);
+        a_params.dx[i] = dx_val;
         
         // Now for the ref_ratios
         attribute = group.openAttribute("ref_ratio");
         type = attribute.getDataType();
         attribute.read(type, &ref_ratio_val);
-        a_params.ref_ratio.append(ref_ratio_val);
+        a_params.ref_ratio[i] = ref_ratio_val;
     }
 
 }
@@ -92,8 +95,6 @@ void read_HDF5_LevelProblemDomain(const std::string &filename, ProblemDomain &pr
     attribute.read(HighLowType, &PDV);
     IntVect lower(PDV.lo_i, PDV.lo_j, PDV.lo_k);
     IntVect upper(PDV.hi_i, PDV.hi_j, PDV.hi_k);
-    pout() << "Problem domain low vector is: (" << PDV.lo_i << "," << PDV.lo_j << "," << PDV.lo_k << ")" << endl;
-    pout() << "Problem domain high vector is: (" << PDV.hi_i << "," << PDV.hi_j << "," << PDV.hi_k << ")" << endl;
     
     // Set the problem domain periodicity
     bool periodicity_array[3] = {0,0,0};
@@ -125,24 +126,6 @@ void read_HDF5_LevelData(const std::string &filename, ProblemDomain &probDomain,
     std::string a_var1 = level + "/boxes";
     std::string &a_name1 = a_var1;
     read(a_handle, boxes, a_name1);
-    for (int i = 0; i < 8; i++)
-    {
-        pout() << boxes[i].smallEnd()[0] << " " << boxes[i].smallEnd()[1] << " " << boxes[i].smallEnd()[2] << endl;
-    }
-    
-    for (int i = 0; i < 8; i++)
-    {
-        pout() << boxes[i].bigEnd()[0] << " " << boxes[i].bigEnd()[1] << " " << boxes[i].bigEnd()[2] << endl;
-    }
-    //pout() << "Box " << i << " intersects: " << probDomain.intersects(boxes[i], boxes[i+1]) << endl;;
-
-    for (int i = 0; i < 8; i++)
-    {
-        for (int j = 0; j < 8; j++)
-        {
-            pout() << "Boxes " << i << " and " << j << " intersect: " <<probDomain.intersects(boxes[i], boxes[j]) << endl;
-        }
-    }
 
     // Assign processors using LoadBalance and create DisjointBoxLayout
     Vector<int> procAssign(boxes.size());
@@ -152,9 +135,8 @@ void read_HDF5_LevelData(const std::string &filename, ProblemDomain &probDomain,
     // Read in the data
     std::string a_variable = level + "/data";
     std::string &a_name = a_variable;
-    pout() << "HELLO" << endl;
     read(a_handle, a_data, a_name, a_layout);
-    pout() << "DID THIS WORK" <<endl;
+
     a_handle.close();
     
 }
@@ -174,26 +156,56 @@ void read_HDF5_ProblemDomain(const std::string &filename, Vector<ProblemDomain> 
 
 void read_HDF5_Data(const std::string &filename, Vector<ProblemDomain> &probDomain, Vector<LevelData<FArrayBox> *> &a_data, sim_parameters &a_params)
 {
-    for (int i = 0; i < 2; i++)
+    // This simply reads the HDF5 data over all levels
+    for (int i = 0; i < a_params.num_levels; i++)
     {
         read_HDF5_LevelData(filename, probDomain[i], *a_data[i], i);
     }
     
 }
 
-
-
-
-
-
-void scale_factor(HDF5Handle & a_handle, BHAMR bh_amr)
+Real average_integral(Vector<LevelData<FArrayBox> *> &a_data, sim_parameters &a_params, int &comp)
 {
-    // Calculate the scale factor for a particular slice
+    // This function returns the average value of a_data over our ProblemDomain
+    Real integral = computeSum(a_data, a_params.ref_ratio, a_params.dx[0], Interval(comp, comp));
+    Real volume = pow(a_params.dx[0]*32, 3);
+    return integral/volume;
+}
 
-    //Calculate the volume integrand
 
+void writing_to_notepad(const std::string filename, const Vector<Vector<Real>> &a_data, const std::vector<std::string> &headers)
+{
+    // This function writes out our data in the format row 1: header[0],header[1],... 
+    // and then each following row i is the next element data[0][i], data[1][i], ...
 
-    //Real integral = computeSum();
+    // Write our the header names
+    std::ofstream outputFile(filename);
+    for (int i = 0; i < headers.size(); i++)
+    {
+        outputFile << headers[i];
+        if (i < headers.size() - 1)
+        {
+            outputFile << ",";
+        }
+
+    }
+    outputFile << "\n";
+
+    // Write out the data
+    for (int j = 0; j < a_data[0].size(); ++j)
+    {
+        for (int i = 0; i < a_data.size(); ++i)
+        {
+            outputFile << a_data[i][j];
+            if (i <  a_data.size() - 1)
+            {
+                outputFile << ",";
+            }
+        }
+
+        outputFile << "\n";
+    }
+
 }
 
 

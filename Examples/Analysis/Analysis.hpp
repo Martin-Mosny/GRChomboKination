@@ -27,4 +27,6 @@ void read_HDF5_ProblemDomain(const std::string &filename, Vector<ProblemDomain> 
 void read_HDF5_LevelData(const std::string &filename, ProblemDomain &probDomain, LevelData<FArrayBox> &a_data, int &level_int);
 void read_HDF5_Data(const std::string &filename, Vector<ProblemDomain> &probDomain, Vector<LevelData<FArrayBox> *> &a_data, sim_parameters &a_params);
 
-void scale_factor(HDF5Handle & a_handle, BHAMR bh_amr);
+Real average_integral(Vector<LevelData<FArrayBox> *> &a_data, sim_parameters &a_params, int &comp);
+
+void writing_to_notepad(const std::string filename, const Vector<Vector<Real>> &a_data, const std::vector<std::string> &headers);
