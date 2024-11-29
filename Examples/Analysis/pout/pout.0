@@ -12,14 +12,4 @@ Parameter: min_lapse not found in parameter file. It has been set to its default
 Parameter: activate_extraction not found in parameter file. It has been set to its default value = 0.
 Parameter: kerr_center not found in parameter file. It has been set to its default value = 50 50 50.
 Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.08.
-E-fold is 0.220098
-E-fold is 0.580266
-E-fold is 0.99388
-E-fold is 1.38734
-E-fold is 1.73321
-E-fold is 2.03059
-E-fold is 2.28652
-E-fold is 2.50873
-E-fold is 2.70376
-E-fold is 2.87676
-GRChombo finished.
+GRChombo analysis finished.

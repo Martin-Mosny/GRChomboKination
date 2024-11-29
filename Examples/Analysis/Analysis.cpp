@@ -164,11 +164,41 @@ void read_HDF5_Data(const std::string &filename, Vector<ProblemDomain> &probDoma
     
 }
 
+void create_layout_data(Vector<LevelData<FArrayBox> *> &a_output, Vector<LevelData<FArrayBox> *> &a_input, Real &val)
+{
+    // This function creates an a_output object of the same layout dimension as a_input 
+    // except only with one component, where every value is val.
+
+    // First we create the correct layout for a_output
+    for (int i = 0; i < a_input.size(); i++)
+    {
+        const DisjointBoxLayout &layout = a_input[i] -> disjointBoxLayout();
+        a_output[i] = new LevelData<FArrayBox>(layout, 1, IntVect::Zero);
+    }
+
+    // Now we loop through all its elements and set them to 1
+    for (int i = 0; i < a_output.size(); i++)
+    {
+        const DisjointBoxLayout &layout = a_output[i] -> disjointBoxLayout();
+        DataIterator dit = layout.dataIterator();
+        for (dit.begin(); dit.ok(); ++dit)
+        {
+            FArrayBox& fab = (*a_output[i])[dit()];
+            for (BoxIterator bit(fab.box()); bit.ok(); ++bit)
+            {
+                const IntVect& iv = bit();
+                fab(iv, 0) = val;
+            }
+        }
+    }
+    
+}
+
 Real average_integral(Vector<LevelData<FArrayBox> *> &a_data, sim_parameters &a_params, int &comp)
 {
     // This function returns the average value of a_data over our ProblemDomain
-    Real integral = computeSum(a_data, a_params.ref_ratio, a_params.dx[0], Interval(comp, comp));
     Real volume = pow(a_params.dx[0]*32, 3);
+    Real integral = computeSum(a_data, a_params.ref_ratio, a_params.dx[0], Interval(comp, comp));
     return integral/volume;
 }
 
@@ -207,6 +237,8 @@ void writing_to_notepad(const std::string filename, const Vector<Vector<Real>> &
     }
 
 }
+
+
 
 
     /*

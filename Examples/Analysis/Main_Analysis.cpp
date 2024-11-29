@@ -38,30 +38,36 @@ int runGRChomboAnalysis(int argc, char *argv[])
     // Initialize necessary objects
 
     // Relevant initial values
-    int num_checkpoints = 10;
+    int num_checkpoints = 30;
     int start_checkpoint_num = 1;
     std::string filename;
 
     // Objects we wish to calculate
-    Vector<Real> E_fold(num_checkpoints);
     Vector<Real> time(num_checkpoints);
     Vector<Real> dx(num_checkpoints);
+    Vector<Real> lapse(num_checkpoints);
+    Vector<Real> E_fold(num_checkpoints);
+    Vector<Real> Hubble(num_checkpoints);
+    Vector<Real> Phi(num_checkpoints);
+    Vector<Real> Pi(num_checkpoints);
 
-    for (int i = 1; i <= num_checkpoints; i++)
+    std::string filename_prefix = "/home/mosny/Desktop/scratch/Kination";
+
+    for (int i = 0; i < num_checkpoints; i++)
     {
-        int element = i - start_checkpoint_num;
+        int element = i + start_checkpoint_num;
 
-        if (i < 10)
+        if (element < 10)
         {
-            filename = "/home/mosny/Desktop/scratch/Kination_00000" + std::to_string(i) + ".3d.hdf5";
+            filename = filename_prefix + "_00000" + std::to_string(element) + ".3d.hdf5";
         }
-        else if ( i < 100)
+        else if ( element < 100)
         {
-            filename = "/home/mosny/Desktop/scratch/Kination_0000" + std::to_string(i) + ".3d.hdf5";
+            filename = filename_prefix + "_0000" + std::to_string(element) + ".3d.hdf5";
         }
-        else if (i < 1000)
+        else if (element < 1000)
         {
-            filename = "/home/mosny/Desktop/scratch/Kination_000" + std::to_string(i) + ".3d.hdf5";   
+            filename = filename_prefix + "_000" + std::to_string(element) + ".3d.hdf5";   
         }
 
         // First we must read the different information from our HDF5 file
@@ -69,8 +75,8 @@ int runGRChomboAnalysis(int argc, char *argv[])
 
         sim_parameters params;
         read_HDF5_key_attributes(filename, params);
-        time[element] = params.time;
-        dx[element] = params.dx[0];
+        time[i] = params.time;
+        dx[i] = params.dx[0];
 
         // Initialize necessary objects and assign memory for pointer objects
         Vector<ProblemDomain> probDomain(params.num_levels);
@@ -87,7 +93,15 @@ int runGRChomboAnalysis(int argc, char *argv[])
         // ----------------------------------------------------
 
         int c_chi = 0;
-        E_fold[element] = -0.5*std::log(average_integral(data, params, c_chi));
+        int c_K = 7;
+        int c_lapse = 18;
+        int c_phi = 25;
+        int c_pi = 26;
+        E_fold[i] = -0.5*std::log(average_integral(data, params, c_chi));
+        Hubble[i] = -average_integral(data, params, c_K)/3.0;
+        lapse[i] = average_integral(data, params, c_lapse);
+        Phi[i] = average_integral(data, params, c_phi);
+        Pi[i] = average_integral(data, params, c_pi);
     }
 
 
@@ -99,10 +113,14 @@ int runGRChomboAnalysis(int argc, char *argv[])
 
     // Select which data we want to print out
     Vector<Vector<Real>> output_data;
-    std::vector<std::string> output_header = {"time", "dx", "e-fold"};
+    std::vector<std::string> output_header = {"time", "dx", "lapse", "e-fold", "Hubble", "Phi", "Pi"};
     output_data.push_back(time);
     output_data.push_back(dx);
+    output_data.push_back(lapse);
     output_data.push_back(E_fold);
+    output_data.push_back(Hubble);
+    output_data.push_back(Phi);
+    output_data.push_back(Pi);
 
     // Write the output in a txt fle
     writing_to_notepad(output_filename, output_data, output_header);

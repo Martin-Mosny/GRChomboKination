@@ -47,10 +47,10 @@ G_Newton = 0.0
 # Scalar field initial data
 scalar_amplitude = 0.1
 scalar_width = 5.0
-scalar_mass = 0.02
+scalar_mass = 0
 
 # Kerr BH data
-kerr_mass = 1.0
+kerr_mass = 0.0
 kerr_spin = 0.0
 
 #################################################
@@ -130,7 +130,7 @@ extrapolating_vars = phi Pi
 # Evolution parameters
 
 # dt will be dx*dt_multiplier on each grid level
-dt_multiplier = 0.25
+dt_multiplier = 0.025
 stop_time = 100.0
 # max_steps = 4
 
