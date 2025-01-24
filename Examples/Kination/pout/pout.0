@@ -4,14 +4,13 @@ Parameter: fill_ratio not found in parameter file. It has been set to its defaul
 Parameter: center not found in parameter file. It has been set to its default value = 50 50 50.
 Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
 Using single regrid threshold.
-Parameter: regrid_threshold not found in parameter file. It has been set to its default value = 0.5.
 Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
 Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
 Parameter: min_chi not found in parameter file. It has been set to its default value = 0.0001.
 Parameter: min_lapse not found in parameter file. It has been set to its default value = 0.0001.
 Parameter: activate_extraction not found in parameter file. It has been set to its default value = 0.
 Parameter: kerr_center not found in parameter file. It has been set to its default value = 50 50 50.
-Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.08.
+Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.
 Setup DefaultLevelFactory
 setupAMRObject
 Parameter: num_ghosts not found in parameter file. It has been set to its default value = 3.
@@ -20,7 +19,6 @@ Parameter: fill_ratio not found in parameter file. It has been set to its defaul
 Parameter: center not found in parameter file. It has been set to its default value = 50 50 50.
 Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
 Using single regrid threshold.
-Parameter: regrid_threshold not found in parameter file. It has been set to its default value = 0.5.
 Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
 Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
 GRAMRLevel constructor
@@ -136,10 +134,10 @@ GRAMRLevel::::loadBalance: procesor map:
 1: 0  
 2: 0  
 3: 0  
-4: 0  
-5: 0  
-6: 0  
-7: 0  
+4: 1  
+5: 1  
+6: 1  
+7: 1  
 
 read level domain: 
 0: ((0,0,0) (15,15,15) (0,0,0))
@@ -245,38 +243,38 @@ GRAMRLevel::::loadBalance: procesor map:
 29: 0  
 30: 0  
 31: 0  
-32: 0  
-33: 0  
-34: 0  
-35: 0  
-36: 0  
-37: 0  
-38: 0  
-39: 0  
-40: 0  
-41: 0  
-42: 0  
-43: 0  
-44: 0  
-45: 0  
-46: 0  
-47: 0  
-48: 0  
-49: 0  
-50: 0  
-51: 0  
-52: 0  
-53: 0  
-54: 0  
-55: 0  
-56: 0  
-57: 0  
-58: 0  
-59: 0  
-60: 0  
-61: 0  
-62: 0  
-63: 0  
+32: 1  
+33: 1  
+34: 1  
+35: 1  
+36: 1  
+37: 1  
+38: 1  
+39: 1  
+40: 1  
+41: 1  
+42: 1  
+43: 1  
+44: 1  
+45: 1  
+46: 1  
+47: 1  
+48: 1  
+49: 1  
+50: 1  
+51: 1  
+52: 1  
+53: 1  
+54: 1  
+55: 1  
+56: 1  
+57: 1  
+58: 1  
+59: 1  
+60: 1  
+61: 1  
+62: 1  
+63: 1  
 
 read level domain: 
 0: ((0,0,0) (15,15,15) (0,0,0))
@@ -358,7 +356,7 @@ AMR::coarseTimeStep:
 max_time = 100
 max_step = 1000000
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000000.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000000.3d.hdf5
 time :0
 iteration :0
 max_level :1
@@ -370,6 +368,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 1.02086e-10
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -382,6 +382,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.96903e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -396,14 +398,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0 (0 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0 (0 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0 (0 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0 (0 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -412,7 +414,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.0390625 (37.7979 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.0390625 (74.5205 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -423,9 +425,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   0  old time = 0.000000e+00  old dt = 7.812500e-02  wallclocktime = 5.46e+00
+coarse time step   0  old time = 0.000000e+00  old dt = 7.812500e-02  wallclocktime = 2.77e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000001.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000001.3d.hdf5
 time :0.078125
 iteration :1
 max_level :1
@@ -487,7 +489,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000001.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000001.3d.hdf5
 time :0.078125
 iteration :1
 max_level :1
@@ -499,6 +501,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.95817e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -511,6 +515,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.90266e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -525,14 +531,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.078125 (42.8326 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.078125 (88.0878 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.078125 (39.7388 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.078125 (78.5414 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -541,7 +547,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.117188 (45.37 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.117188 (90.5086 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -552,9 +558,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   1  old time = 7.812500e-02  old dt = 7.812500e-02  wallclocktime = 5.59e+00
+coarse time step   1  old time = 7.812500e-02  old dt = 7.812500e-02  wallclocktime = 2.77e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000002.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000002.3d.hdf5
 time :0.15625
 iteration :2
 max_level :1
@@ -616,7 +622,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000002.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000002.3d.hdf5
 time :0.15625
 iteration :2
 max_level :1
@@ -628,6 +634,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.77949e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -640,6 +648,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.84159e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -654,14 +664,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.15625 (46.2149 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.15625 (94.3121 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.15625 (44.3494 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.15625 (88.5541 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -670,7 +680,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.195312 (47.2021 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.195312 (94.4109 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -681,9 +691,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   2  old time = 1.562500e-01  old dt = 7.812500e-02  wallclocktime = 5.59e+00
+coarse time step   2  old time = 1.562500e-01  old dt = 7.812500e-02  wallclocktime = 2.81e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000003.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000003.3d.hdf5
 time :0.234375
 iteration :3
 max_level :1
@@ -745,7 +755,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000003.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000003.3d.hdf5
 time :0.234375
 iteration :3
 max_level :1
@@ -757,6 +767,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.59964e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -769,6 +781,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.77747e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -783,14 +797,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.234375 (47.57 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.234375 (96.1018 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.234375 (46.2355 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.234375 (92.0395 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -799,7 +813,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.273438 (48.0937 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.273438 (95.9173 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -810,9 +824,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   3  old time = 2.343750e-01  old dt = 7.812500e-02  wallclocktime = 5.56e+00
+coarse time step   3  old time = 2.343750e-01  old dt = 7.812500e-02  wallclocktime = 2.81e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000004.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000004.3d.hdf5
 time :0.3125
 iteration :4
 max_level :1
@@ -874,7 +888,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000004.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000004.3d.hdf5
 time :0.3125
 iteration :4
 max_level :1
@@ -886,6 +900,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.42154e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -898,6 +914,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.71421e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -912,14 +930,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.3125 (48.2772 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.3125 (97.0464 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.3125 (47.2378 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.3125 (93.9013 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -928,7 +946,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.351562 (48.6118 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.351562 (96.7802 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -939,9 +957,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   4  old time = 3.125000e-01  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step   4  old time = 3.125000e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000005.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000005.3d.hdf5
 time :0.390625
 iteration :5
 max_level :1
@@ -1003,7 +1021,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000005.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000005.3d.hdf5
 time :0.390625
 iteration :5
 max_level :1
@@ -1015,6 +1033,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.24313e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -1027,6 +1047,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.65164e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -1041,14 +1063,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.390625 (48.7028 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.390625 (97.5458 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.390625 (47.8449 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.390625 (94.9882 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1057,7 +1079,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.429688 (48.9307 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.429688 (97.271 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1068,9 +1090,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   5  old time = 3.906250e-01  old dt = 7.812500e-02  wallclocktime = 5.58e+00
+coarse time step   5  old time = 3.906250e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000006.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000006.3d.hdf5
 time :0.46875
 iteration :6
 max_level :1
@@ -1132,7 +1154,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000006.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000006.3d.hdf5
 time :0.46875
 iteration :6
 max_level :1
@@ -1144,6 +1166,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.06847e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -1156,6 +1180,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.58939e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -1170,14 +1196,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.46875 (48.9753 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.46875 (97.9251 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.46875 (48.2569 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.46875 (95.7671 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1186,7 +1212,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.507812 (49.1544 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.507812 (97.6498 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1197,9 +1223,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   6  old time = 4.687500e-01  old dt = 7.812500e-02  wallclocktime = 5.58e+00
+coarse time step   6  old time = 4.687500e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000007.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000007.3d.hdf5
 time :0.546875
 iteration :7
 max_level :1
@@ -1261,7 +1287,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000007.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000007.3d.hdf5
 time :0.546875
 iteration :7
 max_level :1
@@ -1273,6 +1299,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.89698e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -1285,6 +1313,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.52932e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -1299,14 +1329,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.546875 (49.1775 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.546875 (98.157 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.546875 (48.5513 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.546875 (96.2908 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1315,7 +1345,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.585938 (49.3284 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.585938 (97.9256 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1326,9 +1356,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   7  old time = 5.468750e-01  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step   7  old time = 5.468750e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000008.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000008.3d.hdf5
 time :0.625
 iteration :8
 max_level :1
@@ -1390,7 +1420,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000008.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000008.3d.hdf5
 time :0.625
 iteration :8
 max_level :1
@@ -1402,6 +1432,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.72958e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -1414,6 +1446,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.47038e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -1428,14 +1462,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.625 (49.3351 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.625 (98.3398 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.625 (48.7883 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.625 (96.6982 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1444,7 +1478,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.664062 (49.464 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.664062 (98.1161 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1455,9 +1489,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   8  old time = 6.250000e-01  old dt = 7.812500e-02  wallclocktime = 5.56e+00
+coarse time step   8  old time = 6.250000e-01  old dt = 7.812500e-02  wallclocktime = 2.83e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000009.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000009.3d.hdf5
 time :0.703125
 iteration :9
 max_level :1
@@ -1519,7 +1553,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000009.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000009.3d.hdf5
 time :0.703125
 iteration :9
 max_level :1
@@ -1531,6 +1565,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.56575e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -1543,6 +1579,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.4139e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -1557,14 +1595,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.703125 (49.459 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.703125 (98.4691 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.703125 (48.967 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.703125 (97.0032 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1573,7 +1611,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.742188 (49.5642 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.742188 (98.2674 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1584,9 +1622,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   9  old time = 7.031250e-01  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step   9  old time = 7.031250e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000010.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000010.3d.hdf5
 time :0.78125
 iteration :10
 max_level :1
@@ -1648,7 +1686,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000010.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000010.3d.hdf5
 time :0.78125
 iteration :10
 max_level :1
@@ -1660,6 +1698,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.40803e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -1672,6 +1712,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.35903e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -1686,14 +1728,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.78125 (49.5705 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.78125 (98.6094 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.78125 (49.1277 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.78125 (97.282 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1702,7 +1744,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.820312 (49.6609 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.820312 (98.3817 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1713,9 +1755,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  10  old time = 7.812500e-01  old dt = 7.812500e-02  wallclocktime = 5.56e+00
+coarse time step  10  old time = 7.812500e-01  old dt = 7.812500e-02  wallclocktime = 2.86e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000011.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000011.3d.hdf5
 time :0.859375
 iteration :11
 max_level :1
@@ -1777,7 +1819,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000011.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000011.3d.hdf5
 time :0.859375
 iteration :11
 max_level :1
@@ -1789,6 +1831,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.25503e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -1801,6 +1845,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.3058e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -1815,14 +1861,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.859375 (49.6592 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.859375 (98.5303 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.859375 (49.2552 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.859375 (97.3254 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1831,7 +1877,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.898438 (49.7363 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.898438 (98.3107 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1842,9 +1888,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  11  old time = 8.593750e-01  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step  11  old time = 8.593750e-01  old dt = 7.812500e-02  wallclocktime = 2.86e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000012.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000012.3d.hdf5
 time :0.9375
 iteration :12
 max_level :1
@@ -1906,7 +1952,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000012.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000012.3d.hdf5
 time :0.9375
 iteration :12
 max_level :1
@@ -1918,6 +1964,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.10803e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -1930,6 +1978,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.25496e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -1944,14 +1994,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 0.9375 (49.7269 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 0.9375 (98.5682 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.9375 (49.3554 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.9375 (97.4608 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1960,7 +2010,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0.976562 (49.8023 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 0.976562 (98.3936 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -1971,9 +2021,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  12  old time = 9.375000e-01  old dt = 7.812500e-02  wallclocktime = 5.56e+00
+coarse time step  12  old time = 9.375000e-01  old dt = 7.812500e-02  wallclocktime = 2.83e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000013.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000013.3d.hdf5
 time :1.01562
 iteration :13
 max_level :1
@@ -2035,7 +2085,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000013.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000013.3d.hdf5
 time :1.01562
 iteration :13
 max_level :1
@@ -2047,6 +2097,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.96643e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -2059,6 +2111,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.20632e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -2073,14 +2127,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.01562 (49.7927 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.01562 (98.6197 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.01562 (49.447 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.01562 (97.5956 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2089,7 +2143,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.05469 (49.8544 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.05469 (98.4555 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2100,9 +2154,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  13  old time = 1.015625e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step  13  old time = 1.015625e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000014.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000014.3d.hdf5
 time :1.09375
 iteration :14
 max_level :1
@@ -2164,7 +2218,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000014.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000014.3d.hdf5
 time :1.09375
 iteration :14
 max_level :1
@@ -2176,6 +2230,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.83063e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -2188,6 +2244,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.15932e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -2202,14 +2260,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.09375 (49.8396 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.09375 (98.6862 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.09375 (49.5186 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.09375 (97.7355 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2218,7 +2276,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.13281 (49.894 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.13281 (98.5429 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2229,9 +2287,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  14  old time = 1.093750e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step  14  old time = 1.093750e+00  old dt = 7.812500e-02  wallclocktime = 2.82e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000015.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000015.3d.hdf5
 time :1.17188
 iteration :15
 max_level :1
@@ -2293,7 +2351,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000015.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000015.3d.hdf5
 time :1.17188
 iteration :15
 max_level :1
@@ -2305,6 +2363,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.70049e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -2317,6 +2377,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.11503e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -2331,14 +2393,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.17188 (49.8833 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.17188 (98.7542 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.17188 (49.583 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.17188 (97.8662 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2347,7 +2409,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.21094 (49.9305 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.21094 (98.6199 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2358,9 +2420,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  15  old time = 1.171875e+00  old dt = 7.812500e-02  wallclocktime = 5.58e+00
+coarse time step  15  old time = 1.171875e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000016.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000016.3d.hdf5
 time :1.25
 iteration :16
 max_level :1
@@ -2422,7 +2484,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000016.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000016.3d.hdf5
 time :1.25
 iteration :16
 max_level :1
@@ -2434,6 +2496,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.57616e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -2446,6 +2510,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.07277e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -2460,14 +2526,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.25 (49.9169 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.25 (98.7971 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.25 (49.6349 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.25 (97.945 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2476,7 +2542,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.28906 (49.9637 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.28906 (98.6346 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2487,9 +2553,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  16  old time = 1.250000e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step  16  old time = 1.250000e+00  old dt = 7.812500e-02  wallclocktime = 2.85e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000017.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000017.3d.hdf5
 time :1.32812
 iteration :17
 max_level :1
@@ -2551,7 +2617,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000017.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000017.3d.hdf5
 time :1.32812
 iteration :17
 max_level :1
@@ -2563,6 +2629,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.45696e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -2575,6 +2643,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.0323e-13
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -2589,14 +2659,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.32812 (49.9532 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.32812 (98.7784 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.32812 (49.6871 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.32812 (97.9877 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2605,7 +2675,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.36719 (49.9944 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.36719 (98.649 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2616,9 +2686,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  17  old time = 1.328125e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step  17  old time = 1.328125e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000018.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000018.3d.hdf5
 time :1.40625
 iteration :18
 max_level :1
@@ -2680,7 +2750,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000018.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000018.3d.hdf5
 time :1.40625
 iteration :18
 max_level :1
@@ -2692,6 +2762,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.34363e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -2704,6 +2776,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -9.9339e-14
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -2718,14 +2792,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.40625 (49.9799 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.40625 (98.8184 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.40625 (49.7285 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.40625 (98.0668 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2734,7 +2808,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.44531 (50.0193 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.44531 (98.6893 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2745,9 +2819,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  18  old time = 1.406250e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step  18  old time = 1.406250e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000019.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000019.3d.hdf5
 time :1.48438
 iteration :19
 max_level :1
@@ -2809,7 +2883,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000019.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000019.3d.hdf5
 time :1.48438
 iteration :19
 max_level :1
@@ -2821,6 +2895,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.23461e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -2833,6 +2909,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -9.56779e-14
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -2847,14 +2925,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.48438 (50.0097 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.48438 (98.8554 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.48438 (49.7707 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.48438 (98.15 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2863,7 +2941,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.52344 (50.0462 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.52344 (98.7393 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2874,9 +2952,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  19  old time = 1.484375e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step  19  old time = 1.484375e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000020.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000020.3d.hdf5
 time :1.5625
 iteration :20
 max_level :1
@@ -2938,7 +3016,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000020.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000020.3d.hdf5
 time :1.5625
 iteration :20
 max_level :1
@@ -2950,6 +3028,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.131e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -2962,6 +3042,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -9.21801e-14
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -2976,14 +3058,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.5625 (50.0333 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.5625 (98.8817 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.5625 (49.8068 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.5625 (98.2096 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -2992,7 +3074,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.60156 (50.0704 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.60156 (98.7643 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -3003,9 +3085,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  20  old time = 1.562500e+00  old dt = 7.812500e-02  wallclocktime = 5.55e+00
+coarse time step  20  old time = 1.562500e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000021.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000021.3d.hdf5
 time :1.64062
 iteration :21
 max_level :1
@@ -3067,7 +3149,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000021.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000021.3d.hdf5
 time :1.64062
 iteration :21
 max_level :1
@@ -3079,6 +3161,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.03158e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -3091,6 +3175,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -8.88907e-14
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -3105,14 +3191,14 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.64062 (50.0634 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.64062 (98.8912 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::computeDt 0
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.64062 (49.8462 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.64062 (98.2441 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -3121,7 +3207,7 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.67969 (50.0965 M/hr). Boxes on this rank: 64 / 64
+GRAMRLevel::advance level 1 at time 1.67969 (98.7732 M/hr). Boxes on this rank: 32 / 64
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
@@ -3132,9 +3218,9 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step  21  old time = 1.640625e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
+coarse time step  21  old time = 1.640625e+00  old dt = 7.812500e-02  wallclocktime = 2.88e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000022.3d.hdf5
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000022.3d.hdf5
 time :1.71875
 iteration :22
 max_level :1
@@ -3196,7 +3282,7 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000022.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000022.3d.hdf5
 time :1.71875
 iteration :22
 max_level :1
@@ -3208,6 +3294,8 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 1.93731e-13
 GRAMRLevel::writePlotLevel
 dt :0.078125
 dx :3.125
@@ -3220,6 +3308,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -8.57107e-14
 GRAMRLevel::writePlotLevel
 dt :0.0390625
 dx :1.5625
@@ -3234,892 +3324,6 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 AMR::timeStep(0)
 Regrid (level 0) needed - AMR::needToRegrid(0)
 no
-GRAMRLevel::advance level 0 at time 1.71875 (50.0827 M/hr). Boxes on this rank: 8 / 8
+GRAMRLevel::advance level 0 at time 1.71875 (98.8407 M/hr). Boxes on this rank: 4 / 8
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.71875 (49.8766 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.75781 (50.1156 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step  22  old time = 1.718750e+00  old dt = 7.812500e-02  wallclocktime = 5.56e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000023.3d.hdf5
-time :1.79688
-iteration :23
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :23
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.078125
-dx :3.125
-time :1.79688
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.0390625
-dx :1.5625
-time :1.79688
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000023.3d.hdf5
-time :1.79688
-iteration :23
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.078125
-dx :3.125
-time :1.79688
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.0390625
-dx :1.5625
-time :1.79688
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::advance level 0 at time 1.79688 (50.1053 M/hr). Boxes on this rank: 8 / 8
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.79688 (49.9073 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.83594 (50.1366 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step  23  old time = 1.796875e+00  old dt = 7.812500e-02  wallclocktime = 5.56e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000024.3d.hdf5
-time :1.875
-iteration :24
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :24
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.078125
-dx :3.125
-time :1.875
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.0390625
-dx :1.5625
-time :1.875
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000024.3d.hdf5
-time :1.875
-iteration :24
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.078125
-dx :3.125
-time :1.875
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.0390625
-dx :1.5625
-time :1.875
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::advance level 0 at time 1.875 (50.1208 M/hr). Boxes on this rank: 8 / 8
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.875 (49.9308 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.91406 (50.1497 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step  24  old time = 1.875000e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000025.3d.hdf5
-time :1.95312
-iteration :25
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :25
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.078125
-dx :3.125
-time :1.95312
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.0390625
-dx :1.5625
-time :1.95312
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000025.3d.hdf5
-time :1.95312
-iteration :25
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.078125
-dx :3.125
-time :1.95312
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.0390625
-dx :1.5625
-time :1.95312
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::advance level 0 at time 1.95312 (50.1394 M/hr). Boxes on this rank: 8 / 8
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.95312 (49.9567 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 1.99219 (50.1642 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step  25  old time = 1.953125e+00  old dt = 7.812500e-02  wallclocktime = 5.59e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000026.3d.hdf5
-time :2.03125
-iteration :26
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :26
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.078125
-dx :3.125
-time :2.03125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.0390625
-dx :1.5625
-time :2.03125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000026.3d.hdf5
-time :2.03125
-iteration :26
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.078125
-dx :3.125
-time :2.03125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.0390625
-dx :1.5625
-time :2.03125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::advance level 0 at time 2.03125 (50.1458 M/hr). Boxes on this rank: 8 / 8
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 2.03125 (49.9702 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 2.07031 (50.1702 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step  26  old time = 2.031250e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000027.3d.hdf5
-time :2.10938
-iteration :27
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :27
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.078125
-dx :3.125
-time :2.10938
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.0390625
-dx :1.5625
-time :2.10938
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000027.3d.hdf5
-time :2.10938
-iteration :27
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.078125
-dx :3.125
-time :2.10938
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.0390625
-dx :1.5625
-time :2.10938
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::advance level 0 at time 2.10938 (50.1581 M/hr). Boxes on this rank: 8 / 8
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 2.10938 (49.989 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 2.14844 (50.1816 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step  27  old time = 2.109375e+00  old dt = 7.812500e-02  wallclocktime = 5.57e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000028.3d.hdf5
-time :2.1875
-iteration :28
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :28
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.078125
-dx :3.125
-time :2.1875
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.0390625
-dx :1.5625
-time :2.1875
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000028.3d.hdf5
-time :2.1875
-iteration :28
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.078125
-dx :3.125
-time :2.1875
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.0390625
-dx :1.5625
-time :2.1875
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::advance level 0 at time 2.1875 (50.17 M/hr). Boxes on this rank: 8 / 8
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 2.1875 (50.0066 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 2.22656 (50.1893 M/hr). Boxes on this rank: 64 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step  28  old time = 2.187500e+00  old dt = 7.812500e-02  wallclocktime = 5.60e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000029.3d.hdf5
-time :2.26562
-iteration :29
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :29
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.078125
-dx :3.125
-time :2.26562
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.0390625
-dx :1.5625
-time :2.26562
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000029.3d.hdf5
-time :2.26562
-iteration :29
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.078125
-dx :3.125
-time :2.26562
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts

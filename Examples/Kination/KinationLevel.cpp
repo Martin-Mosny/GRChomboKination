@@ -28,6 +28,7 @@
 #include "Potential.hpp"
 #include "ScalarField.hpp"
 #include "SetValue.hpp"
+#include "computeSum.H"
 
 // Things to do at each advance step, after the RK4 is calculated
 void KinationLevel::specificAdvance()
@@ -75,6 +76,13 @@ void KinationLevel::prePlotLevel()
         MatterConstraints<ScalarFieldWithPotential>(
             scalar_field, m_dx, m_p.G_Newton, c_Ham, Interval(c_Mom, c_Mom)),
         m_state_new, m_state_diagnostics, EXCLUDE_GHOST_CELLS);
+    pout() << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" << endl;
+    Vector<int> ref_rat(2, m_ref_ratio);
+    DisjointBoxLayout layout = m_state_diagnostics.disjointBoxLayout();
+    const DisjointBoxLayout* layout_ptr = &layout;
+    Real integral = computeSum(m_state_diagnostics, &layout, m_ref_ratio, m_dx, Interval(c_Ham,c_Ham));
+    Real volume = pow(1.5625*32, 3);
+    pout() << "Hamiltonian constraint is " << integral/volume << endl;
 }
 #endif
 
@@ -138,3 +146,58 @@ void KinationLevel::specificPostTimeStep()
         m_bh_amr.m_ah_finder.solve(m_dt, m_time, m_restart_time);
 #endif
 }
+/*
+// computes the gradient of the scalar field squared at a point in a box
+// i.e. \delta^{ij} d_i phi d_j phi
+inline Real get_grad_phi_sq(const IntVect &a_iv, const FArrayBox &a_phi_fab,
+                            const RealVect &a_dx)
+{
+    Real grad_phi_sq = 0.0;
+    for (int idir = 0; idir < SpaceDim; ++idir)
+    {
+        IntVect iv_offset1 = a_iv;
+        IntVect iv_offset2 = a_iv;
+        iv_offset1[idir] -= 1;
+        iv_offset2[idir] += 1;
+
+        // 2nd order stencils for now
+        Real dphi_dx =
+            0.5 * (a_phi_fab(iv_offset2) - a_phi_fab(iv_offset1)) / a_dx[idir];
+
+        grad_phi_sq += dphi_dx * dphi_dx;
+    }
+    return grad_phi_sq;
+} // end get_grad_phi_sq
+
+void Hamiltonian_constraint_level(DisjointBoxLayout &grids, LevelData<FArrayBox> multigrid_vars, const RealVect &a_dx,
+             const PoissonParameters &a_params, const Real constant_K)
+{   
+    Real Ham_constraint = 0;
+    int Num = 0;
+    Real volume = pow(1.5625*32, 3);
+    LevelData<FArrayBox> *Fields = multigrid_vars[ilev];
+    //LevelData<FArrayBox> *rhs_level_data = rhs[ilev];
+    //DataIterator dit = Fields -> dataIterator();
+    DataIterator dit = grids[ilev].dataIterator();
+    for (dit.begin(); dit.ok(); ++dit)
+        {
+        FArrayBox& Fields_box = (*Fields)[dit()];
+        // FArrayBox& rhs_box = (*rhs_level_data)[dit()];
+        FArrayBox psi_fab(Interval(c_psi_reg, c_psi_reg), Fields_box);
+        const Box& b = grids[ilev][dit];
+        BoxIterator bit(b);
+        for (bit.begin(); bit.ok(); ++bit)
+        {
+            // Must take the modular coordinate to assign ghost values correctly
+            IntVect iv = bit();
+            Real laplacian_value = get_laplacian_psi(iv, psi_fab, a_dx[ilev]);
+            Num += 1;
+            Ham_constraint += laplacian_value 
+               - (pow(psi_fab(iv), 5) * pow(constant_K, 2) / 12.0 
+                - M_PI * pow(Fields_box(iv, c_Pi_0), 2) * pow(psi_fab(iv), 5));
+        }
+    }
+
+    pout() << "The Hamiltonian constraint at level is give by " << Ham_constraint / Num << endl;
+} // end set_rhs
+*/

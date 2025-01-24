@@ -45,16 +45,29 @@ time = np.array(data_dict["time"])
 e_fold = np.array(data_dict["e-fold"])
 Hubble = np.array(data_dict["Hubble"])
 lapse = np.array(data_dict["lapse"])
-Phi = np.array(data_dict["Phi"])
-Pi = np.array(data_dict["Pi"])
+Average_Phi = np.array(data_dict["Average_Phi"])
+Diff_Phi = np.array(data_dict["Diff_Phi"])
+Average_Pi = np.array(data_dict["Average_Pi"])
+Diff_Pi = np.array(data_dict["Diff_Pi"])
+Rho = np.array(data_dict["Rho"])
+Delta = np.array(data_dict["Delta"])
+Ham = np.array(data_dict["Ham"])
 
 # Calculate the proper time
 proper_time = proper_time_calculator(time, lapse)
+proper_time_Hubble = 1/(3*Hubble)
 tau0 = 1/(3*Hubble[0])
 N0 = e_fold[0]
 
 # Check how close the Pi is to Kination evolution
-# plot_data(proper_time, (tau0+proper_time)*Pi/tau0)
+# plot_data(proper_time, (tau0+proper_time)*Average_Pi/tau0)
 
 # Check the scale factor power p, which for kination should be 1/3
-plot_data(proper_time+tau0, (e_fold - N0)/(np.log((tau0+proper_time)/tau0)))
+# plot_data(proper_time+tau0, (e_fold - N0)/(np.log((tau0+proper_time)/tau0)))
+# plot_data(proper_time+tau0, proper_time + tau0 - proper_time_Hubble)
+
+print(proper_time + tau0)
+print(proper_time_Hubble)
+plot_data(proper_time, Delta / np.exp(e_fold))
+# plot_data(proper_time, Diff_Pi)
+# plot_data(e_fold, np.sqrt(8*np.pi)*(Average_Phi - Average_Phi[0])/(np.sqrt(6)*(e_fold - e_fold[0])))

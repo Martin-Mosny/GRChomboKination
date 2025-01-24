@@ -12,909 +12,895 @@ Parameter: min_lapse not found in parameter file. It has been set to its default
 Parameter: activate_extraction not found in parameter file. It has been set to its default value = 0.
 Parameter: kerr_center not found in parameter file. It has been set to its default value = 50 50 50.
 Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.08.
-Setup DefaultLevelFactory
-setupAMRObject
-Parameter: num_ghosts not found in parameter file. It has been set to its default value = 3.
-Parameter: grid_buffer_size not found in parameter file. It has been set to its default value = 8.
-Parameter: fill_ratio not found in parameter file. It has been set to its default value = 0.7.
-Parameter: center not found in parameter file. It has been set to its default value = 50 50 50.
-Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
-Using single regrid threshold.
-Parameter: regrid_threshold not found in parameter file. It has been set to its default value = 0.5.
-Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
-Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
-GRAMRLevel constructor
-GRAMRLevel::define 0
-GRAMRLevel constructor
-GRAMRLevel::define 1
- AMR::verbosity  m_verbosity=10
-Point 3
-AMR::restart
-hdf5 header data: 
-time :0
-iteration :0
-max_level :1
-num_components :27
-num_levels :2
-regrid_interval_0 :1
-regrid_interval_1 :1
-steps_since_regrid_0 :0
-steps_since_regrid_1 :0
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-read max_level = 1
-read num_levels = 2
-set finest_level = 1
-read cur_step = 0
-set restart_step = 0
-read cur_time = 0
-read steps_since_regrid = 0
-GRAMRLevel::readCheckpointHeader
-hdf5 header data:
-time :0
-iteration :0
-max_level :1
-num_components :27
-num_levels :2
-regrid_interval_0 :1
-regrid_interval_1 :1
-steps_since_regrid_0 :0
-steps_since_regrid_1 :0
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::readCheckpointLevel
-hdf5 header data:
-dt :0.78125
-dx :3.125
-time :0
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :3
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-read ref_ratio = 2
-read dx = 3.125
-GRAMRLevel::computeInitialDt 0
-dt = 0.78125
-read time = 0
-GRAMRLevel::::loadBalance: procesor map: 
-0: 0  
-1: 0  
-2: 0  
-3: 0  
-4: 1  
-5: 1  
-6: 1  
-7: 1  
-
-read level domain: 
-0: ((0,0,0) (15,15,15) (0,0,0))
-1: ((0,0,16) (15,15,31) (0,0,0))
-2: ((0,16,0) (15,31,15) (0,0,0))
-3: ((0,16,16) (15,31,31) (0,0,0))
-4: ((16,0,0) (31,15,15) (0,0,0))
-5: ((16,0,16) (31,15,31) (0,0,0))
-6: ((16,16,0) (31,31,15) (0,0,0))
-7: ((16,16,16) (31,31,31) (0,0,0))
-
-Number 1
-Number 2
-data_status is the problem
-Reshape attempt
-WHOLE FUNCTION SUCCESS
-GRAMRLevel::readCheckpointHeader
-hdf5 header data:
-time :0
-iteration :0
-max_level :1
-num_components :27
-num_levels :2
-regrid_interval_0 :1
-regrid_interval_1 :1
-steps_since_regrid_0 :0
-steps_since_regrid_1 :0
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::readCheckpointLevel
-hdf5 header data:
-dt :0.390625
-dx :1.5625
-time :0
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :3
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-read ref_ratio = 2
-read dx = 1.5625
-GRAMRLevel::computeInitialDt 1
-dt = 0.390625
-read time = 0
-GRAMRLevel::::loadBalance: procesor map: 
-0: 0  
-1: 0  
-2: 0  
-3: 0  
-4: 0  
-5: 0  
-6: 0  
-7: 0  
-8: 0  
-9: 0  
-10: 0  
-11: 0  
-12: 0  
-13: 0  
-14: 0  
-15: 0  
-16: 0  
-17: 0  
-18: 0  
-19: 0  
-20: 0  
-21: 0  
-22: 0  
-23: 0  
-24: 0  
-25: 0  
-26: 0  
-27: 0  
-28: 0  
-29: 0  
-30: 0  
-31: 0  
-32: 1  
-33: 1  
-34: 1  
-35: 1  
-36: 1  
-37: 1  
-38: 1  
-39: 1  
-40: 1  
-41: 1  
-42: 1  
-43: 1  
-44: 1  
-45: 1  
-46: 1  
-47: 1  
-48: 1  
-49: 1  
-50: 1  
-51: 1  
-52: 1  
-53: 1  
-54: 1  
-55: 1  
-56: 1  
-57: 1  
-58: 1  
-59: 1  
-60: 1  
-61: 1  
-62: 1  
-63: 1  
-
-read level domain: 
-0: ((0,0,0) (15,15,15) (0,0,0))
-1: ((0,0,16) (15,15,31) (0,0,0))
-2: ((0,0,32) (15,15,47) (0,0,0))
-3: ((0,0,48) (15,15,63) (0,0,0))
-4: ((0,16,0) (15,31,15) (0,0,0))
-5: ((0,16,16) (15,31,31) (0,0,0))
-6: ((0,16,32) (15,31,47) (0,0,0))
-7: ((0,16,48) (15,31,63) (0,0,0))
-8: ((0,32,0) (15,47,15) (0,0,0))
-9: ((0,32,16) (15,47,31) (0,0,0))
-10: ((0,32,32) (15,47,47) (0,0,0))
-11: ((0,32,48) (15,47,63) (0,0,0))
-12: ((0,48,0) (15,63,15) (0,0,0))
-13: ((0,48,16) (15,63,31) (0,0,0))
-14: ((0,48,32) (15,63,47) (0,0,0))
-15: ((0,48,48) (15,63,63) (0,0,0))
-16: ((16,0,0) (31,15,15) (0,0,0))
-17: ((16,0,16) (31,15,31) (0,0,0))
-18: ((16,0,32) (31,15,47) (0,0,0))
-19: ((16,0,48) (31,15,63) (0,0,0))
-20: ((16,16,0) (31,31,15) (0,0,0))
-21: ((16,16,16) (31,31,31) (0,0,0))
-22: ((16,16,32) (31,31,47) (0,0,0))
-23: ((16,16,48) (31,31,63) (0,0,0))
-24: ((16,32,0) (31,47,15) (0,0,0))
-25: ((16,32,16) (31,47,31) (0,0,0))
-26: ((16,32,32) (31,47,47) (0,0,0))
-27: ((16,32,48) (31,47,63) (0,0,0))
-28: ((16,48,0) (31,63,15) (0,0,0))
-29: ((16,48,16) (31,63,31) (0,0,0))
-30: ((16,48,32) (31,63,47) (0,0,0))
-31: ((16,48,48) (31,63,63) (0,0,0))
-32: ((32,0,0) (47,15,15) (0,0,0))
-33: ((32,0,16) (47,15,31) (0,0,0))
-34: ((32,0,32) (47,15,47) (0,0,0))
-35: ((32,0,48) (47,15,63) (0,0,0))
-36: ((32,16,0) (47,31,15) (0,0,0))
-37: ((32,16,16) (47,31,31) (0,0,0))
-38: ((32,16,32) (47,31,47) (0,0,0))
-39: ((32,16,48) (47,31,63) (0,0,0))
-40: ((32,32,0) (47,47,15) (0,0,0))
-41: ((32,32,16) (47,47,31) (0,0,0))
-42: ((32,32,32) (47,47,47) (0,0,0))
-43: ((32,32,48) (47,47,63) (0,0,0))
-44: ((32,48,0) (47,63,15) (0,0,0))
-45: ((32,48,16) (47,63,31) (0,0,0))
-46: ((32,48,32) (47,63,47) (0,0,0))
-47: ((32,48,48) (47,63,63) (0,0,0))
-48: ((48,0,0) (63,15,15) (0,0,0))
-49: ((48,0,16) (63,15,31) (0,0,0))
-50: ((48,0,32) (63,15,47) (0,0,0))
-51: ((48,0,48) (63,15,63) (0,0,0))
-52: ((48,16,0) (63,31,15) (0,0,0))
-53: ((48,16,16) (63,31,31) (0,0,0))
-54: ((48,16,32) (63,31,47) (0,0,0))
-55: ((48,16,48) (63,31,63) (0,0,0))
-56: ((48,32,0) (63,47,15) (0,0,0))
-57: ((48,32,16) (63,47,31) (0,0,0))
-58: ((48,32,32) (63,47,47) (0,0,0))
-59: ((48,32,48) (63,47,63) (0,0,0))
-60: ((48,48,0) (63,63,15) (0,0,0))
-61: ((48,48,16) (63,63,31) (0,0,0))
-62: ((48,48,32) (63,63,47) (0,0,0))
-63: ((48,48,48) (63,63,63) (0,0,0))
-
-Number 1
-Number 2
-data_status is the problem
-Reshape attempt
-WHOLE FUNCTION SUCCESS
-AMR::assignDt
-Point 4
-SUCCESS
-interpolator start
-interpolator done
-AMR::coarseTimeStep:
-max_time = 100
-max_step = 1000000
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000000.3d.hdf5
-time :0
-iteration :0
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.78125
-dx :3.125
-time :0
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.390625
-dx :1.5625
-time :0
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::advance level 0 at time 0 (0 M/hr). Boxes on this rank: 4 / 8
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::advance level 1 at time 0 (0 M/hr). Boxes on this rank: 32 / 64
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step   0  old time = 0.000000e+00  old dt = 7.812500e-01  wallclocktime = 3.45e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000001.3d.hdf5
-time :0.78125
-iteration :1
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :1
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.78125
-dx :3.125
-time :0.78125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.390625
-dx :1.5625
-time :0.78125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000001.3d.hdf5
-time :0.78125
-iteration :1
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.78125
-dx :3.125
-time :0.78125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.390625
-dx :1.5625
-time :0.78125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step   1  old time = 7.812500e-01  old dt = 7.812500e-01  wallclocktime = 3.73e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000002.3d.hdf5
-time :1.5625
-iteration :2
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :2
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.78125
-dx :3.125
-time :1.5625
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.390625
-dx :1.5625
-time :1.5625
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000002.3d.hdf5
-time :1.5625
-iteration :2
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.78125
-dx :3.125
-time :1.5625
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.390625
-dx :1.5625
-time :1.5625
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step   2  old time = 1.562500e+00  old dt = 7.812500e-01  wallclocktime = 3.69e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000003.3d.hdf5
-time :2.34375
-iteration :3
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :3
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.78125
-dx :3.125
-time :2.34375
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.390625
-dx :1.5625
-time :2.34375
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000003.3d.hdf5
-time :2.34375
-iteration :3
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.78125
-dx :3.125
-time :2.34375
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.390625
-dx :1.5625
-time :2.34375
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-GRAMRLevel::postTimeStep 0
-GRAMRLevel::postTimeStep 0 finished
-AMR::assignDt
-coarse time step   3  old time = 2.343750e+00  old dt = 7.812500e-01  wallclocktime = 3.68e+00
-AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000004.3d.hdf5
-time :3.125
-iteration :4
-max_level :1
-num_levels :2
-regrid_interval_0 :0
-regrid_interval_1 :0
-steps_since_regrid_0 :4
-
-GRAMRLevel::writeCheckpointHeader
-num_components :27
-component_0 :chi
-component_1 :h11
-component_10 :A13
-component_11 :A22
-component_12 :A23
-component_13 :A33
-component_14 :Theta
-component_15 :Gamma1
-component_16 :Gamma2
-component_17 :Gamma3
-component_18 :lapse
-component_19 :shift1
-component_2 :h12
-component_20 :shift2
-component_21 :shift3
-component_22 :B1
-component_23 :B2
-component_24 :B3
-component_25 :phi
-component_26 :Pi
-component_3 :h13
-component_4 :h22
-component_5 :h23
-component_6 :h33
-component_7 :K
-component_8 :A11
-component_9 :A12
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.78125
-dx :3.125
-time :3.125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::writeCheckpointLevel
-dt :0.390625
-dx :1.5625
-time :3.125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000004.3d.hdf5
-time :3.125
-iteration :4
-max_level :1
-num_levels :2
-
-GRAMRLevel::writePlotHeader
-num_components :2
-component_0 :chi
-component_1 :phi
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.78125
-dx :3.125
-time :3.125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (31,31,31) (0,0,0))
-
-GRAMRLevel::fillAllEvolutionGhosts
-GRAMRLevel::writePlotLevel
-dt :0.390625
-dx :1.5625
-time :3.125
-is_periodic_0 :1
-is_periodic_1 :1
-is_periodic_2 :1
-ref_ratio :2
-tag_buffer_size :0
-prob_domain :((0,0,0) (63,63,63) (0,0,0))
-
-AMR::timeStep(0)
-Regrid (level 0) needed - AMR::needToRegrid(0)
-no
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 0
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
-GRAMRLevel::computeDt 1
-GRAMRLevel::postTimeStep 1
-GRAMRLevel::postTimeStep 1 finished
-AMR::timeStep(1)
-GRAMRLevel::evalRHS
-GRAMRLevel::evalRHS
+Level is 0
+name is /level_0/data
+0x55a20e533690
+Level is 1
+name is /level_1/data
+0x55a20e533c70
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a20f6e27e0
+Level is 1
+name is /level_1/data
+0x55a20f6e2c60
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a20f7970c0
+Level is 1
+name is /level_1/data
+0x55a20f797540
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a21090b870
+Level is 1
+name is /level_1/data
+0x55a21090bcf0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a211a7f7a0
+Level is 1
+name is /level_1/data
+0x55a211a7fc20
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a212bf33d0
+Level is 1
+name is /level_1/data
+0x55a212bf3850
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a213d66ea0
+Level is 1
+name is /level_1/data
+0x55a213d67320
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a214eda880
+Level is 1
+name is /level_1/data
+0x55a214edad00
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a21604e4c0
+Level is 1
+name is /level_1/data
+0x55a21604e940
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2171c1f00
+Level is 1
+name is /level_1/data
+0x55a2171c2380
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a218335870
+Level is 1
+name is /level_1/data
+0x55a218335cf0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2194a8ff0
+Level is 1
+name is /level_1/data
+0x55a2194a9470
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a21a61cb20
+Level is 1
+name is /level_1/data
+0x55a21a61cfa0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a21b7908e0
+Level is 1
+name is /level_1/data
+0x55a21b790d60
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a21c9043a0
+Level is 1
+name is /level_1/data
+0x55a21c904820
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a21da77d50
+Level is 1
+name is /level_1/data
+0x55a21da781d0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a21ebeb770
+Level is 1
+name is /level_1/data
+0x55a21ebebbf0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a21fd5f440
+Level is 1
+name is /level_1/data
+0x55a21fd5f8c0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a220ed2bb0
+Level is 1
+name is /level_1/data
+0x55a220ed3030
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a222046850
+Level is 1
+name is /level_1/data
+0x55a222046cd0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2231ba3d0
+Level is 1
+name is /level_1/data
+0x55a2231ba850
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a22432dd90
+Level is 1
+name is /level_1/data
+0x55a22432e210
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2254a17f0
+Level is 1
+name is /level_1/data
+0x55a2254a1c70
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a226615880
+Level is 1
+name is /level_1/data
+0x55a226615d00
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2277894d0
+Level is 1
+name is /level_1/data
+0x55a227789950
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2288fcd00
+Level is 1
+name is /level_1/data
+0x55a2288fd180
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a229a70930
+Level is 1
+name is /level_1/data
+0x55a229a70db0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a22abe44c0
+Level is 1
+name is /level_1/data
+0x55a22abe4940
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a22bd58160
+Level is 1
+name is /level_1/data
+0x55a22bd585e0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a22cecbc00
+Level is 1
+name is /level_1/data
+0x55a22cecc080
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a22e03f5c0
+Level is 1
+name is /level_1/data
+0x55a22e03fa40
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a22f1b2f80
+Level is 1
+name is /level_1/data
+0x55a22f1b3400
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a230326860
+Level is 1
+name is /level_1/data
+0x55a230326ce0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a23149a4a0
+Level is 1
+name is /level_1/data
+0x55a23149a920
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a23260dac0
+Level is 1
+name is /level_1/data
+0x55a23260df40
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2337811f0
+Level is 1
+name is /level_1/data
+0x55a233781670
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2348f5450
+Level is 1
+name is /level_1/data
+0x55a2348f58d0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a235a68b20
+Level is 1
+name is /level_1/data
+0x55a235a68fa0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a236bdbe00
+Level is 1
+name is /level_1/data
+0x55a236bdc280
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a237d4fb00
+Level is 1
+name is /level_1/data
+0x55a237d4ff80
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a238ec2fb0
+Level is 1
+name is /level_1/data
+0x55a238ec3430
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a23a0368d0
+Level is 1
+name is /level_1/data
+0x55a23a036d50
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a23b1a9f00
+Level is 1
+name is /level_1/data
+0x55a23b1aa380
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a23c31d640
+Level is 1
+name is /level_1/data
+0x55a23c31dac0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a23d490cf0
+Level is 1
+name is /level_1/data
+0x55a23d491170
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a23e604a90
+Level is 1
+name is /level_1/data
+0x55a23e604f10
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a23f778080
+Level is 1
+name is /level_1/data
+0x55a23f778500
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2408eb930
+Level is 1
+name is /level_1/data
+0x55a2408ebdb0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a241adbae0
+Level is 1
+name is /level_1/data
+0x55a241a5f320
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a242c4f6f0
+Level is 1
+name is /level_1/data
+0x55a242bd2dd0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a243d46730
+Level is 1
+name is /level_1/data
+0x55a243d46bb0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a244eb9f10
+Level is 1
+name is /level_1/data
+0x55a244eba390
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a24602dc70
+Level is 1
+name is /level_1/data
+0x55a24602e0f0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2471a1770
+Level is 1
+name is /level_1/data
+0x55a2471a1bf0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2483150f0
+Level is 1
+name is /level_1/data
+0x55a248315570
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a249488c90
+Level is 1
+name is /level_1/data
+0x55a249489110
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a24b77cba0
+Level is 1
+name is /level_1/data
+0x55a24b77d020
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a24c8e7ff0
+Level is 1
+name is /level_1/data
+0x55a24c8e8470
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a24c96d840
+Level is 1
+name is /level_1/data
+0x55a24c96dcc0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a24eb17410
+Level is 1
+name is /level_1/data
+0x55a24eb17890
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a24ebcaa70
+Level is 1
+name is /level_1/data
+0x55a24ebcaef0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a24fd3e730
+Level is 1
+name is /level_1/data
+0x55a24fd3ebb0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a250eb2230
+Level is 1
+name is /level_1/data
+0x55a250eb26b0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a252025b80
+Level is 1
+name is /level_1/data
+0x55a252026000
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2531997d0
+Level is 1
+name is /level_1/data
+0x55a253199c50
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a25430cf00
+Level is 1
+name is /level_1/data
+0x55a25430d380
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a255480690
+Level is 1
+name is /level_1/data
+0x55a255480b10
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2565f3e70
+Level is 1
+name is /level_1/data
+0x55a2565f42f0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a257767710
+Level is 1
+name is /level_1/data
+0x55a257767b90
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2588daea0
+Level is 1
+name is /level_1/data
+0x55a2588db320
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a259a4ecb0
+Level is 1
+name is /level_1/data
+0x55a259a4f130
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a25abc2670
+Level is 1
+name is /level_1/data
+0x55a25abc2af0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a25bd35f50
+Level is 1
+name is /level_1/data
+0x55a25bd363d0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a25df799f0
+Level is 1
+name is /level_1/data
+0x55a25df79e70
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a25f0ed060
+Level is 1
+name is /level_1/data
+0x55a25f0ed4e0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2602607a0
+Level is 1
+name is /level_1/data
+0x55a260260c20
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a260370a80
+Level is 1
+name is /level_1/data
+0x55a260370f00
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a261477720
+Level is 1
+name is /level_1/data
+0x55a261477ba0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2625ead00
+Level is 1
+name is /level_1/data
+0x55a2625eb180
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a26375e6c0
+Level is 1
+name is /level_1/data
+0x55a26375eb40
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2648d1f90
+Level is 1
+name is /level_1/data
+0x55a2648d2410
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a265a45850
+Level is 1
+name is /level_1/data
+0x55a265a45cd0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a266bb92a0
+Level is 1
+name is /level_1/data
+0x55a266bb9720
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a267d2c9c0
+Level is 1
+name is /level_1/data
+0x55a267d2ce40
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a268ea0620
+Level is 1
+name is /level_1/data
+0x55a268ea0aa0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a26a013ab0
+Level is 1
+name is /level_1/data
+0x55a26a013f30
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a26b1872f0
+Level is 1
+name is /level_1/data
+0x55a26b187770
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a26c2fae30
+Level is 1
+name is /level_1/data
+0x55a26c2fb2b0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a26d46e500
+Level is 1
+name is /level_1/data
+0x55a26d46e980
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a26e5e19b0
+Level is 1
+name is /level_1/data
+0x55a26e5e1e30
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a26f7550e0
+Level is 1
+name is /level_1/data
+0x55a26f755560
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2719887e0
+Level is 1
+name is /level_1/data
+0x55a271988c60
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a271a3c210
+Level is 1
+name is /level_1/data
+0x55a271a3c690
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a272baf200
+Level is 1
+name is /level_1/data
+0x55a272baf680
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a273d22d00
+Level is 1
+name is /level_1/data
+0x55a273d23180
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a274e96560
+Level is 1
+name is /level_1/data
+0x55a274e969e0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a276009c50
+Level is 1
+name is /level_1/data
+0x55a27600a0d0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a27717da50
+Level is 1
+name is /level_1/data
+0x55a27717ded0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+Level is 0
+name is /level_0/data
+0x55a2782f0e30
+Level is 1
+name is /level_1/data
+0x55a2782f12b0
+Level is 1
+QuadCFInterp success
+Ghosts are 3 3
+GRChombo analysis finished.

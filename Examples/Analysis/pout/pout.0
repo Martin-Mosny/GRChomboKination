@@ -12,4 +12,23 @@ Parameter: min_lapse not found in parameter file. It has been set to its default
 Parameter: activate_extraction not found in parameter file. It has been set to its default value = 0.
 Parameter: kerr_center not found in parameter file. It has been set to its default value = 50 50 50.
 Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.08.
+Normalized Hamiltonian constraint is: -7.18149e-16
+Normalized Hamiltonian constraint is: -2.91153e-15
+Normalized Hamiltonian constraint is: -7.2701e-15
+Normalized Hamiltonian constraint is: -1.44643e-14
+Normalized Hamiltonian constraint is: -2.53688e-14
+Normalized Hamiltonian constraint is: -4.09149e-14
+Normalized Hamiltonian constraint is: -6.22886e-14
+Normalized Hamiltonian constraint is: -9.0812e-14
+Normalized Hamiltonian constraint is: -1.2797e-13
+Normalized Hamiltonian constraint is: -1.75458e-13
+Normalized Hamiltonian constraint is: -2.35147e-13
+Normalized Hamiltonian constraint is: -3.09128e-13
+Normalized Hamiltonian constraint is: -3.9963e-13
+Normalized Hamiltonian constraint is: -5.09107e-13
+Normalized Hamiltonian constraint is: -6.40149e-13
+Normalized Hamiltonian constraint is: -7.95537e-13
+Normalized Hamiltonian constraint is: -9.78198e-13
+Normalized Hamiltonian constraint is: -1.19117e-12
+Normalized Hamiltonian constraint is: -1.43766e-12
 GRChombo analysis finished.

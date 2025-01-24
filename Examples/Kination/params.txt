@@ -8,8 +8,8 @@ verbosity = 10
 
 # location / naming of output files
 # output_path = "" # Main path for all files. Must exist!
-chk_prefix = /../../../../scratch/Kination_
-plot_prefix = /../../../../scratch/Kinationp_
+chk_prefix = /../../../../scratch_Experiments/Kination4/Kination_
+plot_prefix = /../../../../scratch_Experiments/Kination4/Kinationp_
 restart_file = /home/mosny/Desktop/Experimental_tools/InitialConditionSolver/InitialConditionsFinal.3d.hdf5
 #restart_file = /home/mosny/Desktop/scratch/Kination_000000.3d.hdf5
 
@@ -42,12 +42,12 @@ print_progress_only_to_rank_0 = 1
 # Here we decouple the evolution so the scalar evolved on the
 # metric background without backreaction (this avoids the need
 # to solve the constaints)
-G_Newton = 0.0
+G_Newton = 1.0
 
 # Scalar field initial data
-scalar_amplitude = 0.1
-scalar_width = 5.0
-scalar_mass = 0
+scalar_amplitude = 0.0
+scalar_width = 0.0
+scalar_mass = 0.0
 
 # Kerr BH data
 kerr_mass = 0.0
@@ -63,7 +63,7 @@ kerr_spin = 0.0
 # NB - if you have a non-cubic grid, you can specify 'N1' or 'N1_full',
 # 'N2' or 'N2_full' and 'N3' or 'N3_full' ( then dx_coarsest = L/N(max) )
 # NB - the N values need to be multiples of the block_factor
-N_full = 64
+N_full = 32
 L_full = 100.0
 
 # Maximum number of times you can regrid above coarsest level
@@ -74,8 +74,8 @@ max_level = 1 # There are (max_level+1) grids, so min is zero
 # Generally you do not need to regrid frequently on every level
 # in this example turn off regridding on all levels
 # Level Regridding: 0   1   2   3   4   5
-regrid_interval   = 0   0   0   0   0   0
-# regrid_threshold  = 0.8
+# regrid_interval   = 0   0   0   0   0   0
+regrid_threshold  = 0.8
 
 regrid_interval = 0 0 0 0 0 0
 
@@ -85,7 +85,7 @@ min_box_size = 16
 
 tag_buffer_size = 0 # this example uses a fixed grid
 
-# grid_buffer_size = 8
+# grid_buffer_size = 3
 # fill_ratio = 0.7
 # num_ghosts = 3
 # center = 100.0 100.0 100.0 # defaults to center of the grid

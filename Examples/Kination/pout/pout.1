@@ -4,14 +4,13 @@ Parameter: fill_ratio not found in parameter file. It has been set to its defaul
 Parameter: center not found in parameter file. It has been set to its default value = 50 50 50.
 Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
 Using single regrid threshold.
-Parameter: regrid_threshold not found in parameter file. It has been set to its default value = 0.5.
 Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
 Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
 Parameter: min_chi not found in parameter file. It has been set to its default value = 0.0001.
 Parameter: min_lapse not found in parameter file. It has been set to its default value = 0.0001.
 Parameter: activate_extraction not found in parameter file. It has been set to its default value = 0.
 Parameter: kerr_center not found in parameter file. It has been set to its default value = 50 50 50.
-Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.08.
+Parameter: AH_initial_guess not found in parameter file. It has been set to its default value = 0.
 Setup DefaultLevelFactory
 setupAMRObject
 Parameter: num_ghosts not found in parameter file. It has been set to its default value = 3.
@@ -20,7 +19,6 @@ Parameter: fill_ratio not found in parameter file. It has been set to its defaul
 Parameter: center not found in parameter file. It has been set to its default value = 50 50 50.
 Parameter: ignore_checkpoint_name_mismatch not found in parameter file. It has been set to its default value = 0.
 Using single regrid threshold.
-Parameter: regrid_threshold not found in parameter file. It has been set to its default value = 0.5.
 Parameter: max_steps not found in parameter file. It has been set to its default value = 1000000.
 Parameter: write_plot_ghosts not found in parameter file. It has been set to its default value = 0.
 GRAMRLevel constructor
@@ -129,7 +127,7 @@ prob_domain :((0,0,0) (31,31,31) (0,0,0))
 read ref_ratio = 2
 read dx = 3.125
 GRAMRLevel::computeInitialDt 0
-dt = 0.78125
+dt = 0.078125
 read time = 0
 GRAMRLevel::::loadBalance: procesor map: 
 0: 0  
@@ -210,7 +208,7 @@ prob_domain :((0,0,0) (63,63,63) (0,0,0))
 read ref_ratio = 2
 read dx = 1.5625
 GRAMRLevel::computeInitialDt 1
-dt = 0.390625
+dt = 0.0390625
 read time = 0
 GRAMRLevel::::loadBalance: procesor map: 
 0: 0  
@@ -358,7 +356,7 @@ AMR::coarseTimeStep:
 max_time = 100
 max_step = 1000000
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000000.3d.hdf5
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000000.3d.hdf5
 time :0
 iteration :0
 max_level :1
@@ -370,8 +368,10 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 1.02086e-10
 GRAMRLevel::writePlotLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
 time :0
 is_periodic_0 :1
@@ -382,8 +382,10 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.96903e-13
 GRAMRLevel::writePlotLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
 time :0
 is_periodic_0 :1
@@ -422,10 +424,10 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   0  old time = 0.000000e+00  old dt = 7.812500e-01  wallclocktime = 3.45e+00
+coarse time step   0  old time = 0.000000e+00  old dt = 7.812500e-02  wallclocktime = 2.77e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000001.3d.hdf5
-time :0.78125
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000001.3d.hdf5
+time :0.078125
 iteration :1
 max_level :1
 num_levels :2
@@ -464,9 +466,9 @@ component_8 :A11
 component_9 :A12
 
 GRAMRLevel::writeCheckpointLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
-time :0.78125
+time :0.078125
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -475,9 +477,9 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::writeCheckpointLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
-time :0.78125
+time :0.078125
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -486,8 +488,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000001.3d.hdf5
-time :0.78125
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000001.3d.hdf5
+time :0.078125
 iteration :1
 max_level :1
 num_levels :2
@@ -498,10 +500,12 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.95817e-13
 GRAMRLevel::writePlotLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
-time :0.78125
+time :0.078125
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -510,10 +514,12 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.90266e-13
 GRAMRLevel::writePlotLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
-time :0.78125
+time :0.078125
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -548,10 +554,10 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   1  old time = 7.812500e-01  old dt = 7.812500e-01  wallclocktime = 3.73e+00
+coarse time step   1  old time = 7.812500e-02  old dt = 7.812500e-02  wallclocktime = 2.77e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000002.3d.hdf5
-time :1.5625
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000002.3d.hdf5
+time :0.15625
 iteration :2
 max_level :1
 num_levels :2
@@ -590,9 +596,9 @@ component_8 :A11
 component_9 :A12
 
 GRAMRLevel::writeCheckpointLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
-time :1.5625
+time :0.15625
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -601,9 +607,9 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::writeCheckpointLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
-time :1.5625
+time :0.15625
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -612,8 +618,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000002.3d.hdf5
-time :1.5625
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000002.3d.hdf5
+time :0.15625
 iteration :2
 max_level :1
 num_levels :2
@@ -624,10 +630,12 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.77949e-13
 GRAMRLevel::writePlotLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
-time :1.5625
+time :0.15625
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -636,10 +644,12 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.84159e-13
 GRAMRLevel::writePlotLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
-time :1.5625
+time :0.15625
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -674,10 +684,10 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   2  old time = 1.562500e+00  old dt = 7.812500e-01  wallclocktime = 3.69e+00
+coarse time step   2  old time = 1.562500e-01  old dt = 7.812500e-02  wallclocktime = 2.81e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000003.3d.hdf5
-time :2.34375
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000003.3d.hdf5
+time :0.234375
 iteration :3
 max_level :1
 num_levels :2
@@ -716,9 +726,9 @@ component_8 :A11
 component_9 :A12
 
 GRAMRLevel::writeCheckpointLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
-time :2.34375
+time :0.234375
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -727,9 +737,9 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::writeCheckpointLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
-time :2.34375
+time :0.234375
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -738,8 +748,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000003.3d.hdf5
-time :2.34375
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000003.3d.hdf5
+time :0.234375
 iteration :3
 max_level :1
 num_levels :2
@@ -750,10 +760,12 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.59964e-13
 GRAMRLevel::writePlotLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
-time :2.34375
+time :0.234375
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -762,10 +774,12 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.77747e-13
 GRAMRLevel::writePlotLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
-time :2.34375
+time :0.234375
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -800,10 +814,10 @@ GRAMRLevel::postTimeStep 1 finished
 GRAMRLevel::postTimeStep 0
 GRAMRLevel::postTimeStep 0 finished
 AMR::assignDt
-coarse time step   3  old time = 2.343750e+00  old dt = 7.812500e-01  wallclocktime = 3.68e+00
+coarse time step   3  old time = 2.343750e-01  old dt = 7.812500e-02  wallclocktime = 2.81e+00
 AMR::writeCheckpointFile
-checkpoint file name = hdf5//../../../../scratch/Kination_000004.3d.hdf5
-time :3.125
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000004.3d.hdf5
+time :0.3125
 iteration :4
 max_level :1
 num_levels :2
@@ -842,9 +856,9 @@ component_8 :A11
 component_9 :A12
 
 GRAMRLevel::writeCheckpointLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
-time :3.125
+time :0.3125
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -853,9 +867,9 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::writeCheckpointLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
-time :3.125
+time :0.3125
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -864,8 +878,8 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (63,63,63) (0,0,0))
 
 AMR::writePlotFile
-plot file name = hdf5//../../../../scratch/Kinationp_000004.3d.hdf5
-time :3.125
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000004.3d.hdf5
+time :0.3125
 iteration :4
 max_level :1
 num_levels :2
@@ -876,10 +890,12 @@ component_0 :chi
 component_1 :phi
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.42154e-13
 GRAMRLevel::writePlotLevel
-dt :0.78125
+dt :0.078125
 dx :3.125
-time :3.125
+time :0.3125
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -888,10 +904,12 @@ tag_buffer_size :0
 prob_domain :((0,0,0) (31,31,31) (0,0,0))
 
 GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.71421e-13
 GRAMRLevel::writePlotLevel
-dt :0.390625
+dt :0.0390625
 dx :1.5625
-time :3.125
+time :0.3125
 is_periodic_0 :1
 is_periodic_1 :1
 is_periodic_2 :1
@@ -916,5 +934,2331 @@ GRAMRLevel::computeDt 1
 GRAMRLevel::postTimeStep 1
 GRAMRLevel::postTimeStep 1 finished
 AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step   4  old time = 3.125000e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000005.3d.hdf5
+time :0.390625
+iteration :5
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :5
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :0.390625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :0.390625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000005.3d.hdf5
+time :0.390625
+iteration :5
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.24313e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :0.390625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.65164e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :0.390625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step   5  old time = 3.906250e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000006.3d.hdf5
+time :0.46875
+iteration :6
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :6
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :0.46875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :0.46875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000006.3d.hdf5
+time :0.46875
+iteration :6
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 4.06847e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :0.46875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.58939e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :0.46875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step   6  old time = 4.687500e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000007.3d.hdf5
+time :0.546875
+iteration :7
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :7
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :0.546875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :0.546875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000007.3d.hdf5
+time :0.546875
+iteration :7
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.89698e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :0.546875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.52932e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :0.546875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step   7  old time = 5.468750e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000008.3d.hdf5
+time :0.625
+iteration :8
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :8
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :0.625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :0.625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000008.3d.hdf5
+time :0.625
+iteration :8
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.72958e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :0.625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.47038e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :0.625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step   8  old time = 6.250000e-01  old dt = 7.812500e-02  wallclocktime = 2.83e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000009.3d.hdf5
+time :0.703125
+iteration :9
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :9
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :0.703125
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :0.703125
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000009.3d.hdf5
+time :0.703125
+iteration :9
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.56575e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :0.703125
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.4139e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :0.703125
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step   9  old time = 7.031250e-01  old dt = 7.812500e-02  wallclocktime = 2.82e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000010.3d.hdf5
+time :0.78125
+iteration :10
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :10
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :0.78125
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :0.78125
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000010.3d.hdf5
+time :0.78125
+iteration :10
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.40803e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :0.78125
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.35903e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :0.78125
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  10  old time = 7.812500e-01  old dt = 7.812500e-02  wallclocktime = 2.86e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000011.3d.hdf5
+time :0.859375
+iteration :11
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :11
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :0.859375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :0.859375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000011.3d.hdf5
+time :0.859375
+iteration :11
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.25503e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :0.859375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.3058e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :0.859375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  11  old time = 8.593750e-01  old dt = 7.812500e-02  wallclocktime = 2.86e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000012.3d.hdf5
+time :0.9375
+iteration :12
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :12
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :0.9375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :0.9375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000012.3d.hdf5
+time :0.9375
+iteration :12
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 3.10803e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :0.9375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.25496e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :0.9375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  12  old time = 9.375000e-01  old dt = 7.812500e-02  wallclocktime = 2.83e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000013.3d.hdf5
+time :1.01562
+iteration :13
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :13
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.01562
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.01562
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000013.3d.hdf5
+time :1.01562
+iteration :13
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.96643e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.01562
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.20632e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.01562
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  13  old time = 1.015625e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000014.3d.hdf5
+time :1.09375
+iteration :14
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :14
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.09375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.09375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000014.3d.hdf5
+time :1.09375
+iteration :14
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.83063e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.09375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.15932e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.09375
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  14  old time = 1.093750e+00  old dt = 7.812500e-02  wallclocktime = 2.82e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000015.3d.hdf5
+time :1.17188
+iteration :15
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :15
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.17188
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.17188
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000015.3d.hdf5
+time :1.17188
+iteration :15
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.70049e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.17188
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.11503e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.17188
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  15  old time = 1.171875e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000016.3d.hdf5
+time :1.25
+iteration :16
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :16
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.25
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.25
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000016.3d.hdf5
+time :1.25
+iteration :16
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.57616e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.25
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.07277e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.25
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  16  old time = 1.250000e+00  old dt = 7.812500e-02  wallclocktime = 2.85e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000017.3d.hdf5
+time :1.32812
+iteration :17
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :17
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.32812
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.32812
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000017.3d.hdf5
+time :1.32812
+iteration :17
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.45696e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.32812
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -1.0323e-13
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.32812
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  17  old time = 1.328125e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000018.3d.hdf5
+time :1.40625
+iteration :18
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :18
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.40625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.40625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000018.3d.hdf5
+time :1.40625
+iteration :18
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.34363e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.40625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -9.9339e-14
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.40625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  18  old time = 1.406250e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000019.3d.hdf5
+time :1.48438
+iteration :19
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :19
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.48438
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.48438
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000019.3d.hdf5
+time :1.48438
+iteration :19
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.23461e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.48438
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -9.56779e-14
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.48438
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  19  old time = 1.484375e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000020.3d.hdf5
+time :1.5625
+iteration :20
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :20
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.5625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.5625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000020.3d.hdf5
+time :1.5625
+iteration :20
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.131e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.5625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -9.21801e-14
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.5625
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  20  old time = 1.562500e+00  old dt = 7.812500e-02  wallclocktime = 2.83e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000021.3d.hdf5
+time :1.64062
+iteration :21
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :21
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.64062
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.64062
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000021.3d.hdf5
+time :1.64062
+iteration :21
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 2.03158e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.64062
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -8.88907e-14
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.64062
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 0
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+AMR::timeStep(1)
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::evalRHS
+GRAMRLevel::computeDt 1
+GRAMRLevel::postTimeStep 1
+GRAMRLevel::postTimeStep 1 finished
+GRAMRLevel::postTimeStep 0
+GRAMRLevel::postTimeStep 0 finished
+AMR::assignDt
+coarse time step  21  old time = 1.640625e+00  old dt = 7.812500e-02  wallclocktime = 2.88e+00
+AMR::writeCheckpointFile
+checkpoint file name = hdf5//../../../../scratch_Experiments/Kination4/Kination_000022.3d.hdf5
+time :1.71875
+iteration :22
+max_level :1
+num_levels :2
+regrid_interval_0 :0
+regrid_interval_1 :0
+steps_since_regrid_0 :22
+
+GRAMRLevel::writeCheckpointHeader
+num_components :27
+component_0 :chi
+component_1 :h11
+component_10 :A13
+component_11 :A22
+component_12 :A23
+component_13 :A33
+component_14 :Theta
+component_15 :Gamma1
+component_16 :Gamma2
+component_17 :Gamma3
+component_18 :lapse
+component_19 :shift1
+component_2 :h12
+component_20 :shift2
+component_21 :shift3
+component_22 :B1
+component_23 :B2
+component_24 :B3
+component_25 :phi
+component_26 :Pi
+component_3 :h13
+component_4 :h22
+component_5 :h23
+component_6 :h33
+component_7 :K
+component_8 :A11
+component_9 :A12
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.078125
+dx :3.125
+time :1.71875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::writeCheckpointLevel
+dt :0.0390625
+dx :1.5625
+time :1.71875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::writePlotFile
+plot file name = hdf5//../../../../scratch_Experiments/Kination4/Kinationp_000022.3d.hdf5
+time :1.71875
+iteration :22
+max_level :1
+num_levels :2
+
+GRAMRLevel::writePlotHeader
+num_components :2
+component_0 :chi
+component_1 :phi
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is 1.93731e-13
+GRAMRLevel::writePlotLevel
+dt :0.078125
+dx :3.125
+time :1.71875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (31,31,31) (0,0,0))
+
+GRAMRLevel::fillAllEvolutionGhosts
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Hamiltonian constraint is -8.57107e-14
+GRAMRLevel::writePlotLevel
+dt :0.0390625
+dx :1.5625
+time :1.71875
+is_periodic_0 :1
+is_periodic_1 :1
+is_periodic_2 :1
+ref_ratio :2
+tag_buffer_size :0
+prob_domain :((0,0,0) (63,63,63) (0,0,0))
+
+AMR::timeStep(0)
+Regrid (level 0) needed - AMR::needToRegrid(0)
+no
 GRAMRLevel::evalRHS
 GRAMRLevel::evalRHS
